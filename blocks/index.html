@@ -8,10 +8,10 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <meta name="description" content="A Material Design Components theme for MkDocs">
+        <meta name="description" content="Enhanced theme for MkDocs">
       
       
-        <link rel="canonical" href="http://yakworks.github.io/mkdocs-material-components/blocks/">
+        <link rel="canonical" href="http://yakworks.github.io/docmark/blocks/">
       
       
         <meta name="author" content="Joshua Burnett">
@@ -19,23 +19,23 @@
       
         <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.11">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-docmark-1.10.14">
     
     
       
-        <title>Admonitions, callouts, sidebars - MkDocs Material Components</title>
+        <title>Blocks - MkDocs Docmark</title>
       
     
     
       
     
     
-      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
+      <script src="../assets/javascripts/modernizr-b36cc87056.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-2cd7d9ab0f.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-8c4c8d1e34.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-035c261bc5.palette.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-4b0996440c.palette.css">
       
       <link rel="stylesheet" href="../assets/stylesheets/material-components-web.min.css">
       <link rel="stylesheet" href="../assets/stylesheets/mdc-web.css">
@@ -60,13 +60,30 @@
   
   
   
-    <body data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+    <body data-md-color-primary="orange" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
         
       </defs>
     </svg>
@@ -78,24 +95,21 @@
       
         <style>.region--header{background-color:rgba(255,255,255,.9);min-height:3.25rem;width:100%;z-index:2}header.region--header{position:fixed;top:0;right:0;left:0}.region--header .region--header__wrapper{max-width:1440px;margin-left:auto;margin-right:auto;position:relative;z-index:2;box-sizing:inherit}.region--header .region--header__logo{display:inline-block;float:left;height:3.25rem;margin:0;padding-left:1rem}.site-logo{display:block;height:4.25rem;padding:1.5rem 0}.site-logo--main{display:block;height:3.25rem;margin:0;padding:0;width:4.25rem}.header-navigation{font-size:1rem;clear:none;float:right;margin-top:.75rem;padding-bottom:0;padding-right:.75rem}.header-navigation__menu{clear:both;overflow:visible;-webkit-transform-style:preserve-3d;width:100%;z-index:9999;display:inline;margin:0;padding:0}.header-navigation__menu-link{display:inline;line-height:1.5;margin-right:0;padding-right:0;width:auto;overflow:hidden;text-align:right;z-index:2}.region--header a{text-decoration:none}.header-navigation__menu-link a{padding-left:.75rem;padding-right:.75rem;color:#012b45;display:inline-block;font-weight:400;text-transform:uppercase;transition:background-color ease .2s}@media only screen and (max-width:500px){.header-navigation{font-size:.85rem}.header-navigation__menu-link a{padding-left:.25rem;padding-right:.25rem}}.header-navigation__menu-link:last-child:not(.header-navigation__active-nav-item):not(:hover):not(:focus){color:#e8650c}.header-navigation__menu-link a:focus,.header-navigation__menu-link a:hover{color:#e8650c}.md-container{padding-top:6.5rem}#header-docs{top:3.25rem}#background{display:none}#header-docs .md-logo{display:none}</style>
 <style media="print">#header-docs{top:0}#header-docs .md-logo{display:block}#header-website{display:none}.md-container{padding-top:0}.headroom--pinned{transform:translateY(0)}#background{position:fixed;top:250px;left:50px;z-index:9999999;background:0 0;min-height:30%;min-width:30%;display:block}#bg-text{color:rgba(211,211,211,.2);font-size:80px;transform:rotate(300deg);-webkit-transform:rotate(300deg)}</style>
-<div id="background">
-  <p id="bg-text">9ci Confidential</p>
-</div>
 <header id="header-website" class="region--header" role="banner">
   <div class="region--header__wrapper">
     <a href="/" class="region--header__logo">
-      <img src="http://www.9ci.com/assets/img/logo.svg" alt="9ci logo" class="site-logo site-logo--main">
+      <img src="https://www.9ci.com/assets/img/logo.svg" alt="9ci logo" class="site-logo site-logo--main">
     </a>
     <nav role="navigation" class="header-navigation">
       <ul id="js-navigation-menu" class="header-navigation__menu">
       <li class="header-navigation__menu-link">
-        <a href="http://www.9ci.com/solutions">Solutions</a>
+        <a href="https://www.9ci.com/solutions">Solutions</a>
       </li>
       <li class="header-navigation__menu-link">
-        <a href="http://www.9ci.com/company">Company</a>
+        <a href="https://www.9ci.com/company">Company</a>
       </li>
       <li class="header-navigation__menu-link">
-        <a href="http://www.9ci.com/contact">Contact</a>
+        <a href="https://www.9ci.com/contact">Contact</a>
       </li>
       </ul>
     </nav>
@@ -105,7 +119,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink md-flex__cell--vmiddle">
-        <a href="http://yakworks.github.io/mkdocs-material-components/" title="MkDocs Material Components" class="md-header-nav__button md-logo">
+        <a href="http://yakworks.github.io/docmark/" title="MkDocs Docmark" class="md-header-nav__button md-logo">
           
             <img src="../assets/images/logo_white.png" width="36" height="36">
           
@@ -117,11 +131,11 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           
-            MkDocs Material Components -
+            MkDocs Docmark -
             
               
             
-            Admonitions, callouts, sidebars
+            Blocks
           
         </span>
       </div>
@@ -160,7 +174,7 @@
   
 
 
-  <a href="https://github.com/yakworks/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/yakworks/docmark" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -169,7 +183,7 @@
       </div>
     
     <div class="md-source__repository">
-      yakworks/mkdocs-material-components
+      yakworks/docmark
     </div>
   </a>
 
@@ -200,7 +214,7 @@
         <i class="md-icon md-icon--home"></i>
       
     </div>
-    MkDocs Material Components
+    MkDocs Docmark
   </label>
   
     <div class="md-nav__source">
@@ -210,7 +224,7 @@
   
 
 
-  <a href="https://github.com/yakworks/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/yakworks/docmark" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -219,7 +233,7 @@
       </div>
     
     <div class="md-source__repository">
-      yakworks/mkdocs-material-components
+      yakworks/docmark
     </div>
   </a>
 
@@ -233,20 +247,8 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Intro" class="md-nav__link">
-      Intro
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../cheat-sheet/" title="Cheat Sheet" class="md-nav__link">
-      Cheat Sheet
+    <a href=".." title="Home" class="md-nav__link">
+      Home
     </a>
   </li>
 
@@ -264,11 +266,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Admonitions, callouts, sidebars
+        Blocks
       </label>
     
-    <a href="./" title="Admonitions, callouts, sidebars" class="md-nav__link md-nav__link--active">
-      Admonitions, callouts, sidebars
+    <a href="./" title="Blocks" class="md-nav__link md-nav__link--active">
+      Blocks
     </a>
     
       
@@ -478,43 +480,103 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../cheat-sheet/" title="Cheat sheet" class="md-nav__link">
+      Cheat sheet
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../customization/" title="Customization" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../release-notes/" title="Release notes" class="md-nav__link">
+      Release notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../specimen/" title="Specimen" class="md-nav__link">
+      Specimen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
     
-    <label class="md-nav__link" for="nav-4">
-      Embedding web apps
+    <label class="md-nav__link" for="nav-10">
+      Embedding
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        Embedding web apps
+      <label class="md-nav__title" for="nav-10">
+        Embedding
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../embedding/excel/" title="Excel" class="md-nav__link">
-      Excel
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../embedding/lucid/" title="Lucid Charts" class="md-nav__link">
-      Lucid Charts
-    </a>
-  </li>
-
         
           
           
@@ -534,8 +596,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../embedding/jing/" title="Snagit & Jing" class="md-nav__link">
-      Snagit & Jing
+    <a href="../embedding/excel/" title="Excel" class="md-nav__link">
+      Excel
     </a>
   </li>
 
@@ -552,6 +614,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/jing/" title="Jing" class="md-nav__link">
+      Jing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/lucid/" title="Lucid" class="md-nav__link">
+      Lucid
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -562,27 +648,15 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../getting-started/" title="Install & Config" class="md-nav__link">
-      Install & Config
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-11">
       Extensions
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-11">
         Extensions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -606,8 +680,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/codehilite/" title="CodeHilite" class="md-nav__link">
-      CodeHilite
+    <a href="../extensions/codehilite/" title="Codehilite" class="md-nav__link">
+      Codehilite
     </a>
   </li>
 
@@ -654,38 +728,14 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/pymdown/" title="PyMdown" class="md-nav__link">
-      PyMdown
+    <a href="../extensions/pymdown/" title="Pymdown" class="md-nav__link">
+      Pymdown
     </a>
   </li>
 
         
       </ul>
     </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../specimen/" title="Specimen" class="md-nav__link">
-      Specimen
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../customization/" title="Customization" class="md-nav__link">
-      Customization
-    </a>
   </li>
 
     
@@ -906,10 +956,10 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/yakworks/mkdocs-material-components/edit/material-components-web/docs/blocks.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/yakworks/docmark/edit/docmark/docs/blocks.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Admonitions, callouts, sidebars</h1>
+                  <h1>Blocks</h1>
                 
                 
                 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
@@ -920,12 +970,12 @@ and syntax highlighting, has nice support for autocompletion (on emojis too in A
 Finally, it degrades nicely and will still look decent in markdown parsers that support the basics, such as github.
 We have to hijack a few emojis to use as the first thing in the blockquotes but we think it worth it.
 click the edit pencil above to see the source for this page.</p>
-<p>Here is an example of what the markdown would degrade to and look when a parser doesn't support this extension</p>
+<p>Here is an example of what the markdown would degrade to and might look like when a parser doesn't support this extension</p>
 <hr />
 <blockquote>
-<p><img align="absmiddle" alt="📘" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4d8.png" title=":blue_book:" width="20px" /> <strong>Note: Cool Feature</strong><br />
+<p><img alt="📘" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d8.png" title=":blue_book:" /> <strong>Note: Cool Feature</strong>
 Using an emoji and strong text we can specify what we need to build other types of blocks</p>
-<div class="codehilite"><pre><span></span>&gt; :blue_book: **Note: Cool Feature**
+<div class="codehilite"><pre><span></span>&gt; :memo: **Note: Cool Feature**
 &gt; Information here
 </pre></div>
 
@@ -936,7 +986,7 @@ Using an emoji and strong text we can specify what we need to build other types 
 <h3 id="cheatsheet">Cheatsheet<a class="headerlink" href="#cheatsheet" title="Permanent link">&para;</a></h3>
 <div class="row">
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" />  </p>
+<p><img alt="📷" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
 <table>
 <thead>
 <tr>
@@ -947,23 +997,23 @@ Using an emoji and strong text we can specify what we need to build other types 
 <tbody>
 <tr>
 <td>Callout</td>
-<td>&gt; 📣 or <code class="codehilite">&gt; :mega:</code></td>
+<td>&gt; 📣 or <code>&gt; :mega:</code></td>
 </tr>
 <tr>
 <td>Figure</td>
-<td>&gt; 📷 or <code class="codehilite">&gt; :camera:</code></td>
+<td>&gt; 📷 or <code>&gt; :camera:</code></td>
 </tr>
 <tr>
 <td>Sidebar Bookmark</td>
-<td><code class="codehilite">&gt; 🔖</code> or <code class="codehilite">&gt; :bookmark:</code></td>
+<td><code>&gt; 🔖</code> or <code>&gt; :bookmark:</code></td>
 </tr>
 <tr>
 <td>Float Left align</td>
-<td>'&gt; 👈' or <code class="codehilite">&gt; :point_left:</code></td>
+<td>'&gt; 👈' or <code>&gt; :point_left:</code></td>
 </tr>
 <tr>
 <td>Float Right align</td>
-<td>'&gt; 👉' or <code class="codehilite">&gt; :point_right:</code></td>
+<td>'&gt; 👉' or <code>&gt; :point_right:</code></td>
 </tr>
 </tbody>
 </table>
@@ -981,7 +1031,7 @@ a call out floated left
 
 with sizing and float alignment
 <span class="k">&gt; </span><span class="ge">:camera:{.float-left .pct33}</span>
-<span class="k">&gt; </span><span class="ge">**Figure Title**   </span>
+<span class="k">&gt; </span><span class="ge">**Figure Title**</span>
 <span class="k">&gt; </span><span class="ge">![](images/dingus/image.png)</span>
 </pre></div>
 
@@ -996,35 +1046,35 @@ with sizing and float alignment
 <tbody>
 <tr>
 <td>Memo / Note</td>
-<td>&gt; 📝 or <code class="codehilite">&gt; :memo:</code></td>
+<td>&gt; 📝 or <code>&gt; :memo:</code></td>
 </tr>
 <tr>
 <td>Tip / Hint</td>
-<td><code class="codehilite">&gt; 💡</code> or <code class="codehilite">&gt; :bulb:</code> or <code class="codehilite">&gt; :memo:{.tip}</code></td>
+<td><code>&gt; 💡</code> or <code>&gt; :bulb:</code> or <code>&gt; :memo:{.tip}</code></td>
 </tr>
 <tr>
 <td>Success</td>
-<td><img align="absmiddle" alt="👍" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" title=":thumbsup:" width="20px" /> <code class="codehilite">&gt; :thumbsup:</code> or <code class="codehilite">&gt; :memo:{.success}</code></td>
+<td><img alt="👍" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" title=":thumbsup:" /> <code>&gt; :thumbsup:</code> or <code>&gt; :memo:{.success}</code></td>
 </tr>
 <tr>
 <td>Summary</td>
-<td><img align="absmiddle" alt="📖" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4d6.png" title=":book:" width="20px" /> <code class="codehilite">&gt; :book:</code> or <code class="codehilite">&gt; :memo:{.summary}</code></td>
+<td><img alt="📖" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png" title=":book:" /> <code>&gt; :book:</code> or <code>&gt; :memo:{.summary}</code></td>
 </tr>
 <tr>
 <td>Warning</td>
-<td><img align="absmiddle" alt="⚠️" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" title=":warning:" width="20px" /> <code class="codehilite">&gt; :warning:</code></td>
+<td><img alt="⚠️" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" title=":warning:" /> <code>&gt; :warning:</code></td>
 </tr>
 <tr>
 <td>Fail</td>
-<td><img align="absmiddle" alt="❌" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/274c.png" title=":x:" width="20px" /> <code class="codehilite">&gt; :x:</code> or <code class="codehilite">&gt; :memo:{.fail}</code></td>
+<td><img alt="❌" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" title=":x:" /> <code>&gt; :x:</code> or <code>&gt; :memo:{.fail}</code></td>
 </tr>
 <tr>
 <td>Danger</td>
-<td><img align="absmiddle" alt="💥" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a5.png" title=":boom:" width="20px" /> <code class="codehilite">&gt; :boom:</code> or <code class="codehilite">&gt; :memo:{.danger}</code></td>
+<td><img alt="💥" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a5.png" title=":boom:" /> <code>&gt; :boom:</code> or <code>&gt; :memo:{.danger}</code></td>
 </tr>
 <tr>
 <td>Bug</td>
-<td><img align="absmiddle" alt="🐛" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" width="20px" /> <code class="codehilite">&gt; :beetle:</code>  or  <code class="codehilite">&gt; :memo:{.bug}</code></td>
+<td><img alt="🐛" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" /> <code>&gt; :beetle:</code>  or  <code>&gt; :memo:{.bug}</code></td>
 </tr>
 </tbody>
 </table>
@@ -1032,77 +1082,77 @@ with sizing and float alignment
 <h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
 <div class="row">
 <blockquote>
-<p><img align="absmiddle" alt="📝" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" width="20px" /> <strong>Note/Memo Admonition</strong><br />
-<code class="codehilite">&gt; :memo: **Title**</code>  </p>
+<p><img alt="📝" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" /> <strong>Note/Memo Admonition</strong>
+<code>&gt; :memo: **Title**</code></p>
 </blockquote>
 <hr />
 <blockquote>
-<p><img align="absmiddle" alt="💡" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" width="20px" /> <strong>Tip Admonition</strong><br />
-<code class="codehilite">&gt; :bulb: **Title**</code></p>
+<p><img alt="💡" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> <strong>Tip Admonition</strong>
+<code>&gt; :bulb: **Title**</code></p>
 </blockquote>
 <hr />
 <blockquote>
-<p><img align="absmiddle" alt="👍" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" title=":thumbsup:" width="20px" /> <strong>Success Admonition</strong><br />
-<code class="codehilite">&gt; :thumbsup: **Title**</code></p>
-</blockquote>
-<hr />
-</div>
-<div class="row">
-<blockquote>
-<p><img align="absmiddle" alt="📖" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4d6.png" title=":book:" width="20px" /> <strong>Summary Admonition</strong>
-<code class="codehilite">&gt; :book: content</code></p>
-</blockquote>
-<hr />
-<blockquote>
-<p><img align="absmiddle" alt="⚠️" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" title=":warning:" width="20px" /> Warning/Important<br />
-<code class="codehilite">&gt; :warning: content</code></p>
-</blockquote>
-<hr />
-<blockquote>
-<p><img align="absmiddle" alt="❌" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/274c.png" title=":x:" width="20px" /> Failure Admonition<br />
-<code class="codehilite">&gt; :x: content</code></p>
+<p><img alt="👍" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" title=":thumbsup:" /> <strong>Success Admonition</strong>
+<code>&gt; :thumbsup: **Title**</code></p>
 </blockquote>
 <hr />
 </div>
 <div class="row">
 <blockquote>
-<p><img align="absmiddle" alt="💥" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a5.png" title=":boom:" width="20px" /> <strong>Danger Admonition</strong> <br />
-<code class="codehilite">&gt; :boom: content</code></p>
+<p><img alt="📖" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png" title=":book:" /> <strong>Summary Admonition</strong>
+<code>&gt; :book: content</code></p>
 </blockquote>
 <hr />
 <blockquote>
-<p><img align="absmiddle" alt="🐛" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" width="20px" /> <strong>Bug</strong>
-<code class="codehilite">&gt; :bug: content</code></p>
+<p><img alt="⚠️" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" title=":warning:" /> Warning/Important
+<code>&gt; :warning: content</code></p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="❌" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" title=":x:" /> Failure Admonition
+<code>&gt; :x: content</code></p>
 </blockquote>
 <hr />
 </div>
 <div class="row">
 <blockquote>
-<p><img align="absmiddle" alt="🔖" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f516.png" title=":bookmark:" width="20px" /> <strong>Sidebar Bookmark</strong> <br />
-<code class="codehilite">&gt; :bookmark: content</code></p>
+<p><img alt="💥" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a5.png" title=":boom:" /> <strong>Danger Admonition</strong>
+<code>&gt; :boom: content</code></p>
 </blockquote>
 <hr />
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji center-content" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <strong>Fig Caption</strong>
+<p><img alt="🐛" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" /> <strong>Bug</strong>
+<code>&gt; :bug: content</code></p>
+</blockquote>
+<hr />
+</div>
+<div class="row">
+<blockquote>
+<p><img alt="🔖" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f516.png" title=":bookmark:" /> <strong>Sidebar Bookmark</strong>
+<code>&gt; :bookmark: content</code></p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji center-content" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>Fig Caption</strong>
 <div class="codehilite"><pre><span></span>&gt; :camera: **Fig Caption**
 &gt; content
 </pre></div></p>
 </blockquote>
 <hr />
 <blockquote>
-<p><img align="absmiddle" alt="📣" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" width="20px" /> <strong>Callout</strong>
-<code class="codehilite">&gt; :mega: text</code></p>
+<p><img alt="📣" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" /> <strong>Callout</strong>
+<code>&gt; :mega: text</code></p>
 </blockquote>
 <hr />
 </div>
 <hr />
 <blockquote>
-<p><img align="absmiddle" alt="💡" class="gemoji center" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" width="20px" /> we put the above examples in <code class="codehilite">&lt;div class=row&gt;</code> which we will cover later</p>
+<p><img alt="💡" class="gemoji center" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> we put the above examples in <code>&lt;div class=row&gt;</code> which we will cover later</p>
 </blockquote>
 <h2 id="sidebar-bookmarks">Sidebar Bookmarks<a class="headerlink" href="#sidebar-bookmarks" title="Permanent link">&para;</a></h2>
 <p>Sidebar bookmarks are an idea taken from ascidoc</p>
 <blockquote>
-<p><img align="absmiddle" alt="🔖" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f516.png" title=":bookmark:" width="20px" /> <strong>Sidebars</strong></p>
+<p><img alt="🔖" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f516.png" title=":bookmark:" /> <strong>Sidebars</strong></p>
 <ul>
 <li>sidebar bookmarks shrink/expand to fit the content by default.</li>
 <li>They have a centered title</li>
@@ -1112,12 +1162,12 @@ with sizing and float alignment
 </blockquote>
 <p>any valid markdown such as tables can also go into the blocks</p>
 <blockquote>
-<p><img align="absmiddle" alt="🔖" class="gemoji center-content" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f516.png" title=":bookmark:" width="20px" /> <strong>Sidebar with lots of elements</strong>
-added <code class="codehilite">{.center-content}</code> to center contents.<br />
+<p><img alt="🔖" class="gemoji center-content" src="https://github.githubassets.com/images/icons/emoji/unicode/1f516.png" title=":bookmark:" /> <strong>Sidebar with lots of elements</strong>
+added <code>{.center-content}</code> to center contents.
 center-text centers the container elements as well as text</p>
 <ul>
 <li>lists get centered and expand</li>
-<li><code class="codehilite">&lt;li&gt;</code> part is always left aligned</li>
+<li><code>&lt;li&gt;</code> part is always left aligned</li>
 </ul>
 <div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">y</span>
 <span class="nx">foo</span> <span class="o">!=</span> <span class="nx">bar</span>
@@ -1126,10 +1176,10 @@ center-text centers the container elements as well as text</p>
 <blockquote>
 <p>nested blockquotes are still full width</p>
 </blockquote>
-<p>Images get centered<br />
+<p>Images get centered
 <img alt="stormcat" class="small" src="../images/dingus/image.png" title="The Stormtroopcat" /></p>
 <blockquote>
-<p><img align="absmiddle" alt="📝" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" width="20px" /> nested admonitions</p>
+<p><img alt="📝" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" /> nested admonitions</p>
 </blockquote>
 <table>
 <thead>
@@ -1159,16 +1209,16 @@ center-text centers the container elements as well as text</p>
 <li>figures are used for images, latex or anything really</li>
 <li>they have no styling or padding</li>
 <li>the title will be placed on the bottom, you can use <em>italic</em></li>
-<li>use ids to link to them from elsewhere in your doc <code class="codehilite">:camera:{#your-id-name}</code></li>
+<li>use ids to link to them from elsewhere in your doc <code>:camera:{#your-id-name}</code></li>
 </ul>
 <div class="row">
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <strong><em>Image Figure</em></strong> <br />
+<p><img alt="📷" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong><em>Image Figure</em></strong>
 <img src='../images/dingus/image.png'></p>
 </blockquote>
 <hr />
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji center-content" height="20px" id="example-table-figure" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <strong>Table Figure</strong>
+<p><img alt="📷" class="gemoji center-content" id="example-table-figure" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>Table Figure</strong>
 <em>Will work with diagrams too</em></p>
 <table>
 <thead>
@@ -1195,14 +1245,14 @@ center-text centers the container elements as well as text</p>
   article example below</li>
 </ul>
 <p><strong>Example</strong></p>
-<div class="codehilite"><pre><span></span>&gt; :mega: **This is a callout with big centered text like this**  
+<div class="codehilite"><pre><span></span>&gt; :mega: **This is a callout with big centered text like this**
 &gt; **Callouts are blockquotes with bigger text and special styling.**
 </pre></div>
 
 
 <p>will produce</p>
 <blockquote>
-<p><img align="absmiddle" alt="📣" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" width="20px" /> <strong>This is a callout with big centered text like this</strong><br />
+<p><img alt="📣" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" /> <strong>This is a callout with big centered text like this</strong>
 <strong>Callouts are blockquotes with bigger text and special styling.</strong></p>
 </blockquote>
 <h2 id="sizing-alignment">Sizing &amp; Alignment<a class="headerlink" href="#sizing-alignment" title="Permanent link">&para;</a></h2>
@@ -1361,38 +1411,38 @@ Admonitions</p>
 <td></td>
 </tr>
 <tr>
-<td>.float-left or <code class="codehilite">:point_left:</code></td>
+<td>.float-left or <code>:point_left:</code></td>
 <td>float the block/image LEFT letting other content flow around it</td>
 </tr>
 <tr>
-<td>.float-right or <code class="codehilite">:point_right:</code></td>
+<td>.float-right or <code>:point_right:</code></td>
 <td>float the block/image RIGHT letting other content flow around it</td>
 </tr>
 </tbody>
 </table>
 <h3 id="attributes-plugin">Attributes Plugin<a class="headerlink" href="#attributes-plugin" title="Permanent link">&para;</a></h3>
 <p>We rely on <a href="https://pythonhosted.org/Markdown/extensions/attr_list.html">the attributes plugin</a> to use these classes.
-Attach them to the emoji that is being used to setup the block. like so <code class="codehilite">&gt; :memo:{.small} ...</code>.</p>
+Attach them to the emoji that is being used to setup the block. like so <code>&gt; :memo:{.small} ...</code>.</p>
 <h3 id="id-reference-links">#id reference links<a class="headerlink" href="#id-reference-links" title="Permanent link">&para;</a></h3>
 <p>Using the attributes plugin you can assign reference id's to link back to. You can , for example, refer and link to figures such as linking to the <a href="#example-table-figure">example table figure</a> at the start of this doc.
-We do this with the attributes plugin by assigning a unique id to the figure above like this <code class="codehilite">&gt; :camera:{#example-table-figure} ...</code> and then reference that link like this <code class="codehilite"><span class="p">[</span><span class="n">example</span> <span class="n">figure</span><span class="p">](</span><span class="err">#</span><span class="n">example</span><span class="o">-</span><span class="n">table</span><span class="o">-</span><span class="n">figure</span><span class="p">)</span></code>. The hash symbol <code class="codehilite">#</code> is short hand for <code class="codehilite">id=</code>.</p>
+We do this with the attributes plugin by assigning a unique id to the figure above like this <code>&gt; :camera:{#example-table-figure} ...</code> and then reference that link like this <code>[example figure](#example-table-figure)</code>. The hash symbol <code>#</code> is short hand for <code>id=</code>.</p>
 <h2 id="floats">Floats<a class="headerlink" href="#floats" title="Permanent link">&para;</a></h2>
 <p>Floats can use emojis too.
-add <img align="absmiddle" alt="👈" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" width="20px" /> <code class="codehilite">:point_left:</code> to float left and <img align="absmiddle" alt="👉" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" width="20px" /> <code class="codehilite">:point_right:</code> to float right</p>
+add <img alt="👈" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" /> <code>:point_left:</code> to float left and <img alt="👉" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" /> <code>:point_right:</code> to float right</p>
 <blockquote>
-<p><img align="absmiddle" alt="📣" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" width="20px" /> <img align="absmiddle" alt="👈" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" width="20px" />
-floated left callout<br />
-<code class="codehilite">&gt; :mega: :point_left: floated left callout</code></p>
+<p><img alt="📣" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" /> <img alt="👈" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" />
+floated left callout
+<code>&gt; :mega: :point_left: floated left callout</code></p>
 </blockquote>
 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. se cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <blockquote>
-<p><img align="absmiddle" alt="📣" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" width="20px" /> <img align="absmiddle" alt="👉" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" width="20px" />
-floated left callout<br />
-<code class="codehilite">&gt; :mega: :point_right: floated left callout</code></p>
+<p><img alt="📣" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" /> <img alt="👉" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" />
+floated left callout
+<code>&gt; :mega: :point_right: floated left callout</code></p>
 </blockquote>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <blockquote>
-<p><img align="absmiddle" alt="👈" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" width="20px" />
+<p><img alt="👈" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" />
  <img align="left" alt="" src="../images/gandhi.jpg" width="80" />
  The moment the slave resolves that he will no longer be a slave, his fetters fall.</p>
 </blockquote>
@@ -1400,11 +1450,11 @@ floated left callout<br />
 <hr />
 <h3 id="using-attributes">Using Attributes<a class="headerlink" href="#using-attributes" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><img align="absmiddle" alt="📝" class="gemoji float-left pct33" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" width="20px" /> <strong>Use Size</strong><br />
-This is a note floated left with a 33% width <code class="codehilite"><span class="na">.pct33</span></code> 33% size</p>
+<p><img alt="📝" class="gemoji float-left pct33" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" /> <strong>Use Size</strong>
+This is a note floated left with a 33% width <code>.pct33</code> 33% size</p>
 </blockquote>
 <p>Can use the the attributes plugin instead of the emoji's above as shown in more examples below
-just tag append the class names from above inside the squiggly brackets <code class="codehilite">{ }</code>
+just tag append the class names from above inside the squiggly brackets <code>{ }</code>
 next to the emoji. the example below will give you what you see on the left here</p>
 <div class="codehilite"><pre><span></span><span class="k">    &gt; </span><span class="ge">:memo:{.float-left .pct33} **Use Size**</span>
 <span class="k">    &gt; </span><span class="ge">This is a small note floated left</span>
@@ -1412,16 +1462,16 @@ next to the emoji. the example below will give you what you see on the left here
 
 <hr />
 <h2 id="material-icons">Material Icons<a class="headerlink" href="#material-icons" title="Permanent link">&para;</a></h2>
-<p>You can use the material icons by adding an <code class="codehilite"><span class="na">.icon</span></code> class to an italic using atiributes<br />
-<code class="codehilite">_cloud_{.icon}</code> will produce <em class="icon">cloud</em> for example.
-any of these are valid <a href="https://material.io/icons/">https://material.io/icons/</a><br />
-💡 remember to use <code class="codehilite">_</code> when there is a space in the icon name</p>
+<p>You can use the material icons by adding an <code>.icon</code> class to an italic using atiributes
+<code>_cloud_{.icon}</code> will produce <em class="icon">cloud</em> for example.
+any of these are valid <a href="https://material.io/icons/">https://material.io/icons/</a>
+💡 remember to use <code>_</code> when there is a space in the icon name</p>
 <h2 id="rows">Rows<a class="headerlink" href="#rows" title="Permanent link">&para;</a></h2>
-<p>Wrap one or more blocks in a <code class="codehilite"><span class="nt">&lt;div</span> <span class="na">markdown=</span><span class="s">&quot;1&quot;</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;/div&gt;</span></code>
+<p>Wrap one or more blocks in a <code>&lt;div markdown=&quot;1&quot; class=&quot;row&quot;&gt; &lt;/div&gt;</code>
 This will equal space those blocks in that row as can be seen in many examples in this doc.</p>
 <h2 id="examples_1">Examples<a class="headerlink" href="#examples_1" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <img align="absmiddle" alt="👈" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" width="20px" /> <strong><em>pi day rocks it at our house</em></strong>
+<p><img alt="📷" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <img alt="👈" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" /> <strong><em>pi day rocks it at our house</em></strong>
 <img src="../images/kids-pie-day.jpg" width='300'></p>
 </blockquote>
 <!-- Excel src="../docs/fancyStuff.xlsx" range="A1:E50"-->
@@ -1430,42 +1480,42 @@ This will equal space those blocks in that row as can be seen in many examples i
 
 <p>can be floated on both sides</p>
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji float-right small" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <strong>Figure: Image Caption</strong><br />
+<p><img alt="📷" class="gemoji float-right small" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>Figure: Image Caption</strong>
 <img alt="" src="../images/mental-thumb.jpg" />
 changes size uses attributes to set size
-<code class="codehilite">&gt; :camera:{.float-right .medium} **Figure Title**</code></p>
+<code>&gt; :camera:{.float-right .medium} **Figure Title**</code></p>
 </blockquote>
 <hr />
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji float-right large" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <strong>.large</strong><br />
+<p><img alt="📷" class="gemoji float-right large" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>.large</strong>
 <img alt="" src="../images/dingus/image.png" /></p>
 </blockquote>
 <p><strong>Size &amp; Alignment Examples</strong>
 see chart above</p>
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji float-left tiny" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <strong>.tiny</strong><br />
+<p><img alt="📷" class="gemoji float-left tiny" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>.tiny</strong>
 <img alt="" class="pico" src="../images/dingus/image.png" /></p>
 </blockquote>
 <p>&nbsp;</p>
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji float-left xsmall" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <strong>.xsmall</strong><br />
+<p><img alt="📷" class="gemoji float-left xsmall" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>.xsmall</strong>
 <img alt="" src="../images/dingus/image.png" /></p>
 </blockquote>
 <p>&nbsp;</p>
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji float-left small" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <strong>.small</strong><br />
+<p><img alt="📷" class="gemoji float-left small" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>.small</strong>
 <img alt="" src="../images/dingus/image.png" /></p>
 </blockquote>
 <hr />
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji medium center" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <strong>.medium .center</strong><br />
+<p><img alt="📷" class="gemoji medium center" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>.medium .center</strong>
 <img alt="" src="../images/dingus/image.png" /></p>
 </blockquote>
 <hr />
 <p><strong>stand-alone sidebar bookmarks &amp; figure examples</strong></p>
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji center-all pct80" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /><br />
-added <code class="codehilite">{.center-all .pct80}</code> to center in container and center contents and make size 66%</p>
+<p><img alt="📷" class="gemoji center-all pct80" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" />
+added <code>{.center-all .pct80}</code> to center in container and center contents and make size 66%</p>
 <table>
 <thead>
 <tr>
@@ -1496,7 +1546,7 @@ added <code class="codehilite">{.center-all .pct80}</code> to center in containe
 <h2 id="floating-examples">Floating Examples<a class="headerlink" href="#floating-examples" title="Permanent link">&para;</a></h2>
 <h3 id="what-is-lorem-ipsum">What is Lorem Ipsum?<a class="headerlink" href="#what-is-lorem-ipsum" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><img align="absmiddle" alt="🔖" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f516.png" title=":bookmark:" width="20px" /> <img align="absmiddle" alt="👈" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" width="20px" /> <strong>sidebar-left <img align="absmiddle" alt="📌" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4cc.png" title=":pushpin:" width="20px" /></strong>  </p>
+<p><img alt="🔖" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f516.png" title=":bookmark:" /> <img alt="👈" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" /> <strong>sidebar-left <img alt="📌" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4cc.png" title=":pushpin:" /></strong></p>
 <ul>
 <li>used since the 1500s</li>
 <li>popularised in the 1960s</li>
@@ -1504,20 +1554,20 @@ added <code class="codehilite">{.center-all .pct80}</code> to center in containe
 </blockquote>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 <blockquote>
-<p><img align="absmiddle" alt="💡" class="gemoji float-right small" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" width="20px" /> <strong>Example Tip</strong><br />
-This is a tip admonition  </p>
+<p><img alt="💡" class="gemoji float-right small" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> <strong>Example Tip</strong>
+This is a tip admonition</p>
 </blockquote>
 <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 <h3 id="where-does-it-come-from">Where does it come from?<a class="headerlink" href="#where-does-it-come-from" title="Permanent link">&para;</a></h3>
 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 <blockquote>
-<p><img align="absmiddle" alt="📣" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" width="20px" /> <img align="absmiddle" alt="👉" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" width="20px" /> <strong>roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</strong></p>
+<p><img alt="📣" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" /> <img alt="👉" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" /> <strong>roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</strong></p>
 </blockquote>
 <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
 Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
 <h3 id="why-do-we-use-it">Why do we use it?<a class="headerlink" href="#why-do-we-use-it" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <img align="absmiddle" alt="👈" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" width="20px" /> <strong><em>Sample Code</em></strong>
+<p><img alt="📷" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <img alt="👈" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" /> <strong><em>Sample Code</em></strong>
 <div class="codehilite"><pre><span></span><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="nx">x</span><span class="o">++</span>
 <span class="k">for</span> <span class="nx">foo</span> <span class="k">in</span> <span class="nx">some</span>
@@ -1527,12 +1577,12 @@ Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Ma
 Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 <h3 id="where-can-i-get-some">Where can I get some?<a class="headerlink" href="#where-can-i-get-some" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <img align="absmiddle" alt="👈" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" width="20px" /> <strong><em>foo</em></strong>
+<p><img alt="📷" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <img alt="👈" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" /> <strong><em>foo</em></strong>
 <img alt="foo" src="../images/mental-thumb.jpg" title="pi day" /></p>
 </blockquote>
 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <img align="absmiddle" alt="👉" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" width="20px" /> <strong>Figure With a Table</strong></p>
+<p><img alt="📷" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <img alt="👉" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" /> <strong>Figure With a Table</strong></p>
 <table>
 <thead>
 <tr>
@@ -1595,7 +1645,7 @@ Many desktop publishing packages and web page editors now use Lorem Ipsum as the
 <hr />
 <div class="row">
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <strong>table fig</strong></p>
+<p><img alt="📷" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>table fig</strong></p>
 <table>
 <thead>
 <tr>
@@ -1620,7 +1670,7 @@ Many desktop publishing packages and web page editors now use Lorem Ipsum as the
 </blockquote>
 <hr />
 <blockquote>
-<p><img align="absmiddle" alt="📷" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <strong>This is a figure with a code</strong></p>
+<p><img alt="📷" class="gemoji" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>This is a figure with a code</strong></p>
 <div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">Vue</span> <span class="nx">from</span> <span class="s1">&#39;vue&#39;</span>
 <span class="kr">import</span> <span class="nx">App</span> <span class="nx">from</span> <span class="s1">&#39;./App&#39;</span>
 <span class="kr">import</span> <span class="nx">router</span> <span class="nx">from</span> <span class="s1">&#39;./router&#39;</span>
@@ -1656,7 +1706,7 @@ Many desktop publishing packages and web page editors now use Lorem Ipsum as the
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../cheat-sheet/" title="Cheat Sheet" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1665,19 +1715,19 @@ Many desktop publishing packages and web page editors now use Lorem Ipsum as the
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Cheat Sheet
+                Home
               </span>
             </div>
           </a>
         
         
-          <a href="../embedding/excel/" title="Excel" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../cheat-sheet/" title="Cheat sheet" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Excel
+                Cheat sheet
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1693,13 +1743,13 @@ Many desktop publishing packages and web page editors now use Lorem Ipsum as the
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016 - 2017 Martin Donath, changes by Joshua Burnett
+            Copyright &copy; 2020 Joshua Burnett
           </div>
         
         powered by
         <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
         and
-        <a href="http://yakworks.github.io/mkdocs-material-components/" title="Material Components for MkDocs">
+        <a href="http://yakworks.github.io/docmark/" title="MkDocs Docmark Theme">
           Material Components for MkDocs</a>
       </div>
     </div>
@@ -1708,7 +1758,7 @@ Many desktop publishing packages and web page editors now use Lorem Ipsum as the
       
     </div>
     
-      <script src="../assets/javascripts/application-68832431b5.js"></script>
+      <script src="../assets/javascripts/application-ea76b28b63.js"></script>
       
       
       <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>

@@ -1,0 +1,1687 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <meta name="description" content="Enhanced theme for MkDocs">
+      
+      
+        <link rel="canonical" href="http://yakworks.github.io/docmark/release-notes/">
+      
+      
+        <meta name="author" content="Joshua Burnett">
+      
+      
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-docmark-1.10.14">
+    
+    
+      
+        <title>Release notes - MkDocs Docmark</title>
+      
+    
+    
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-b36cc87056.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-8c4c8d1e34.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-4b0996440c.palette.css">
+      
+      <link rel="stylesheet" href="../assets/stylesheets/material-components-web.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/mdc-web.css">
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Ubuntu+Mono">
+        <style>body,input{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="orange" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      
+        <style>.region--header{background-color:rgba(255,255,255,.9);min-height:3.25rem;width:100%;z-index:2}header.region--header{position:fixed;top:0;right:0;left:0}.region--header .region--header__wrapper{max-width:1440px;margin-left:auto;margin-right:auto;position:relative;z-index:2;box-sizing:inherit}.region--header .region--header__logo{display:inline-block;float:left;height:3.25rem;margin:0;padding-left:1rem}.site-logo{display:block;height:4.25rem;padding:1.5rem 0}.site-logo--main{display:block;height:3.25rem;margin:0;padding:0;width:4.25rem}.header-navigation{font-size:1rem;clear:none;float:right;margin-top:.75rem;padding-bottom:0;padding-right:.75rem}.header-navigation__menu{clear:both;overflow:visible;-webkit-transform-style:preserve-3d;width:100%;z-index:9999;display:inline;margin:0;padding:0}.header-navigation__menu-link{display:inline;line-height:1.5;margin-right:0;padding-right:0;width:auto;overflow:hidden;text-align:right;z-index:2}.region--header a{text-decoration:none}.header-navigation__menu-link a{padding-left:.75rem;padding-right:.75rem;color:#012b45;display:inline-block;font-weight:400;text-transform:uppercase;transition:background-color ease .2s}@media only screen and (max-width:500px){.header-navigation{font-size:.85rem}.header-navigation__menu-link a{padding-left:.25rem;padding-right:.25rem}}.header-navigation__menu-link:last-child:not(.header-navigation__active-nav-item):not(:hover):not(:focus){color:#e8650c}.header-navigation__menu-link a:focus,.header-navigation__menu-link a:hover{color:#e8650c}.md-container{padding-top:6.5rem}#header-docs{top:3.25rem}#background{display:none}#header-docs .md-logo{display:none}</style>
+<style media="print">#header-docs{top:0}#header-docs .md-logo{display:block}#header-website{display:none}.md-container{padding-top:0}.headroom--pinned{transform:translateY(0)}#background{position:fixed;top:250px;left:50px;z-index:9999999;background:0 0;min-height:30%;min-width:30%;display:block}#bg-text{color:rgba(211,211,211,.2);font-size:80px;transform:rotate(300deg);-webkit-transform:rotate(300deg)}</style>
+<header id="header-website" class="region--header" role="banner">
+  <div class="region--header__wrapper">
+    <a href="/" class="region--header__logo">
+      <img src="https://www.9ci.com/assets/img/logo.svg" alt="9ci logo" class="site-logo site-logo--main">
+    </a>
+    <nav role="navigation" class="header-navigation">
+      <ul id="js-navigation-menu" class="header-navigation__menu">
+      <li class="header-navigation__menu-link">
+        <a href="https://www.9ci.com/solutions">Solutions</a>
+      </li>
+      <li class="header-navigation__menu-link">
+        <a href="https://www.9ci.com/company">Company</a>
+      </li>
+      <li class="header-navigation__menu-link">
+        <a href="https://www.9ci.com/contact">Contact</a>
+      </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<header id="header-docs" class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink md-flex__cell--vmiddle">
+        <a href="http://yakworks.github.io/docmark/" title="MkDocs Docmark" class="md-header-nav__button md-logo">
+          
+            <img src="../assets/images/logo_white.png" width="36" height="36">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            MkDocs Docmark -
+            
+              
+            
+            Release notes
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/yakworks/docmark" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      yakworks/docmark
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+      
+    </div>
+  </nav>
+</header>
+      
+    
+    <div class="md-container">
+      
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
+    MkDocs Docmark
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/yakworks/docmark" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      yakworks/docmark
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../blocks/" title="Blocks" class="md-nav__link">
+      Blocks
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cheat-sheet/" title="Cheat sheet" class="md-nav__link">
+      Cheat sheet
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../customization/" title="Customization" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Release notes
+      </label>
+    
+    <a href="./" title="Release notes" class="md-nav__link md-nav__link--active">
+      Release notes
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title md-nav__toc" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading" title="Upgrading" class="md-nav__link">
+    Upgrading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changelog" title="Changelog" class="md-nav__link">
+    Changelog
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1103-_-october-11-2017" title="1.10.3 _ October 11, 2017" class="md-nav__link">
+    1.10.3 _ October 11, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1102-_-october-6-2017" title="1.10.2 _ October 6, 2017" class="md-nav__link">
+    1.10.2 _ October 6, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1101-_-september-14-2017" title="1.10.1 _ September 14, 2017" class="md-nav__link">
+    1.10.1 _ September 14, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1100-_-september-1-2017" title="1.10.0 _ September 1, 2017" class="md-nav__link">
+    1.10.0 _ September 1, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#190-_-august-29-2017" title="1.9.0 _ August 29, 2017" class="md-nav__link">
+    1.9.0 _ August 29, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#181-_-august-7-2017" title="1.8.1 _ August 7, 2017" class="md-nav__link">
+    1.8.1 _ August 7, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#180-_-august-2-2017" title="1.8.0 _ August 2, 2017" class="md-nav__link">
+    1.8.0 _ August 2, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#175-_-july-25-2017" title="1.7.5 _ July 25, 2017" class="md-nav__link">
+    1.7.5 _ July 25, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#174-_-june-21-2017" title="1.7.4 _ June 21, 2017" class="md-nav__link">
+    1.7.4 _ June 21, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#173-_-june-7-2017" title="1.7.3 _ June 7, 2017" class="md-nav__link">
+    1.7.3 _ June 7, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#172-_-june-6-2017" title="1.7.2 _ June 6, 2017" class="md-nav__link">
+    1.7.2 _ June 6, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#171-_-june-1-2017" title="1.7.1 _ June 1, 2017" class="md-nav__link">
+    1.7.1 _ June 1, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#170-_-june-1-2017" title="1.7.0 _ June 1, 2017" class="md-nav__link">
+    1.7.0 _ June 1, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#164-_-may-24-2017" title="1.6.4 _ May 24, 2017" class="md-nav__link">
+    1.6.4 _ May 24, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#163-_-may-16-2017" title="1.6.3 _ May 16, 2017" class="md-nav__link">
+    1.6.3 _ May 16, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#162-_-may-15-2017" title="1.6.2 _ May 15, 2017" class="md-nav__link">
+    1.6.2 _ May 15, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#161-_-april-23-2017" title="1.6.1 _ April 23, 2017" class="md-nav__link">
+    1.6.1 _ April 23, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#160-_-april-22-2017" title="1.6.0 _ April 22, 2017" class="md-nav__link">
+    1.6.0 _ April 22, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#155-_-april-20-2017" title="1.5.5 _ April 20, 2017" class="md-nav__link">
+    1.5.5 _ April 20, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#154-_-april-8-2017" title="1.5.4 _ April 8, 2017" class="md-nav__link">
+    1.5.4 _ April 8, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-_-april-7-2017" title="1.5.3 _ April 7, 2017" class="md-nav__link">
+    1.5.3 _ April 7, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-_-april-5-2017" title="1.5.2 _ April 5, 2017" class="md-nav__link">
+    1.5.2 _ April 5, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#151-_-march-30-2017" title="1.5.1 _ March 30, 2017" class="md-nav__link">
+    1.5.1 _ March 30, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#150-_-march-24-2017" title="1.5.0 _ March 24, 2017" class="md-nav__link">
+    1.5.0 _ March 24, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#141-_-march-16-2017" title="1.4.1 _ March 16, 2017" class="md-nav__link">
+    1.4.1 _ March 16, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#140-_-march-16-2017" title="1.4.0 _ March 16, 2017" class="md-nav__link">
+    1.4.0 _ March 16, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#130-_-march-11-2017" title="1.3.0 _ March 11, 2017" class="md-nav__link">
+    1.3.0 _ March 11, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#120-_-march-3-2017" title="1.2.0 _ March 3, 2017" class="md-nav__link">
+    1.2.0 _ March 3, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#111-_-february-26-2017" title="1.1.1 _ February 26, 2017" class="md-nav__link">
+    1.1.1 _ February 26, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110-_-february-26-2017" title="1.1.0 _ February 26, 2017" class="md-nav__link">
+    1.1.0 _ February 26, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#105-_-february-18-2017" title="1.0.5 _ February 18, 2017" class="md-nav__link">
+    1.0.5 _ February 18, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-_-february-16-2017" title="1.0.4 _ February 16, 2017" class="md-nav__link">
+    1.0.4 _ February 16, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-_-january-22-2017" title="1.0.3 _ January 22, 2017" class="md-nav__link">
+    1.0.3 _ January 22, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-_-january-15-2017" title="1.0.2 _ January 15, 2017" class="md-nav__link">
+    1.0.2 _ January 15, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#101-_-january-14-2017" title="1.0.1 _ January 14, 2017" class="md-nav__link">
+    1.0.1 _ January 14, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100-_-january-13-2017" title="1.0.0 _ January 13, 2017" class="md-nav__link">
+    1.0.0 _ January 13, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#024-_-june-26-2016" title="0.2.4 _ June 26, 2016" class="md-nav__link">
+    0.2.4 _ June 26, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#023-_-may-16-2016" title="0.2.3 _ May 16, 2016" class="md-nav__link">
+    0.2.3 _ May 16, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#022-_-march-20-2016" title="0.2.2 _ March 20, 2016" class="md-nav__link">
+    0.2.2 _ March 20, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#021-_-march-12-2016" title="0.2.1 _ March 12, 2016" class="md-nav__link">
+    0.2.1 _ March 12, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#020-_-february-24-2016" title="0.2.0 _ February 24, 2016" class="md-nav__link">
+    0.2.0 _ February 24, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#013-_-february-21-2016" title="0.1.3 _ February 21, 2016" class="md-nav__link">
+    0.1.3 _ February 21, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#012-_-february-16-2016" title="0.1.2 _ February 16, 2016" class="md-nav__link">
+    0.1.2 _ February 16, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#011-_-february-11-2016" title="0.1.1 _ February 11, 2016" class="md-nav__link">
+    0.1.1 _ February 11, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#010-_-february-9-2016" title="0.1.0 _ February 9, 2016" class="md-nav__link">
+    0.1.0 _ February 9, 2016
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../specimen/" title="Specimen" class="md-nav__link">
+      Specimen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Embedding
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Embedding
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/evernote/" title="Evernote" class="md-nav__link">
+      Evernote
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/excel/" title="Excel" class="md-nav__link">
+      Excel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/github/" title="Github" class="md-nav__link">
+      Github
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/jing/" title="Jing" class="md-nav__link">
+      Jing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/lucid/" title="Lucid" class="md-nav__link">
+      Lucid
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Extensions
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        Extensions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/admonition/" title="Admonition" class="md-nav__link">
+      Admonition
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/codehilite/" title="Codehilite" class="md-nav__link">
+      Codehilite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/footnotes/" title="Footnotes" class="md-nav__link">
+      Footnotes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/metadata/" title="Metadata" class="md-nav__link">
+      Metadata
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/permalinks/" title="Permalinks" class="md-nav__link">
+      Permalinks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/pymdown/" title="Pymdown" class="md-nav__link">
+      Pymdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title md-nav__toc" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading" title="Upgrading" class="md-nav__link">
+    Upgrading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changelog" title="Changelog" class="md-nav__link">
+    Changelog
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1103-_-october-11-2017" title="1.10.3 _ October 11, 2017" class="md-nav__link">
+    1.10.3 _ October 11, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1102-_-october-6-2017" title="1.10.2 _ October 6, 2017" class="md-nav__link">
+    1.10.2 _ October 6, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1101-_-september-14-2017" title="1.10.1 _ September 14, 2017" class="md-nav__link">
+    1.10.1 _ September 14, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1100-_-september-1-2017" title="1.10.0 _ September 1, 2017" class="md-nav__link">
+    1.10.0 _ September 1, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#190-_-august-29-2017" title="1.9.0 _ August 29, 2017" class="md-nav__link">
+    1.9.0 _ August 29, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#181-_-august-7-2017" title="1.8.1 _ August 7, 2017" class="md-nav__link">
+    1.8.1 _ August 7, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#180-_-august-2-2017" title="1.8.0 _ August 2, 2017" class="md-nav__link">
+    1.8.0 _ August 2, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#175-_-july-25-2017" title="1.7.5 _ July 25, 2017" class="md-nav__link">
+    1.7.5 _ July 25, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#174-_-june-21-2017" title="1.7.4 _ June 21, 2017" class="md-nav__link">
+    1.7.4 _ June 21, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#173-_-june-7-2017" title="1.7.3 _ June 7, 2017" class="md-nav__link">
+    1.7.3 _ June 7, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#172-_-june-6-2017" title="1.7.2 _ June 6, 2017" class="md-nav__link">
+    1.7.2 _ June 6, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#171-_-june-1-2017" title="1.7.1 _ June 1, 2017" class="md-nav__link">
+    1.7.1 _ June 1, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#170-_-june-1-2017" title="1.7.0 _ June 1, 2017" class="md-nav__link">
+    1.7.0 _ June 1, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#164-_-may-24-2017" title="1.6.4 _ May 24, 2017" class="md-nav__link">
+    1.6.4 _ May 24, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#163-_-may-16-2017" title="1.6.3 _ May 16, 2017" class="md-nav__link">
+    1.6.3 _ May 16, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#162-_-may-15-2017" title="1.6.2 _ May 15, 2017" class="md-nav__link">
+    1.6.2 _ May 15, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#161-_-april-23-2017" title="1.6.1 _ April 23, 2017" class="md-nav__link">
+    1.6.1 _ April 23, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#160-_-april-22-2017" title="1.6.0 _ April 22, 2017" class="md-nav__link">
+    1.6.0 _ April 22, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#155-_-april-20-2017" title="1.5.5 _ April 20, 2017" class="md-nav__link">
+    1.5.5 _ April 20, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#154-_-april-8-2017" title="1.5.4 _ April 8, 2017" class="md-nav__link">
+    1.5.4 _ April 8, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-_-april-7-2017" title="1.5.3 _ April 7, 2017" class="md-nav__link">
+    1.5.3 _ April 7, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-_-april-5-2017" title="1.5.2 _ April 5, 2017" class="md-nav__link">
+    1.5.2 _ April 5, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#151-_-march-30-2017" title="1.5.1 _ March 30, 2017" class="md-nav__link">
+    1.5.1 _ March 30, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#150-_-march-24-2017" title="1.5.0 _ March 24, 2017" class="md-nav__link">
+    1.5.0 _ March 24, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#141-_-march-16-2017" title="1.4.1 _ March 16, 2017" class="md-nav__link">
+    1.4.1 _ March 16, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#140-_-march-16-2017" title="1.4.0 _ March 16, 2017" class="md-nav__link">
+    1.4.0 _ March 16, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#130-_-march-11-2017" title="1.3.0 _ March 11, 2017" class="md-nav__link">
+    1.3.0 _ March 11, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#120-_-march-3-2017" title="1.2.0 _ March 3, 2017" class="md-nav__link">
+    1.2.0 _ March 3, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#111-_-february-26-2017" title="1.1.1 _ February 26, 2017" class="md-nav__link">
+    1.1.1 _ February 26, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110-_-february-26-2017" title="1.1.0 _ February 26, 2017" class="md-nav__link">
+    1.1.0 _ February 26, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#105-_-february-18-2017" title="1.0.5 _ February 18, 2017" class="md-nav__link">
+    1.0.5 _ February 18, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-_-february-16-2017" title="1.0.4 _ February 16, 2017" class="md-nav__link">
+    1.0.4 _ February 16, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-_-january-22-2017" title="1.0.3 _ January 22, 2017" class="md-nav__link">
+    1.0.3 _ January 22, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-_-january-15-2017" title="1.0.2 _ January 15, 2017" class="md-nav__link">
+    1.0.2 _ January 15, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#101-_-january-14-2017" title="1.0.1 _ January 14, 2017" class="md-nav__link">
+    1.0.1 _ January 14, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100-_-january-13-2017" title="1.0.0 _ January 13, 2017" class="md-nav__link">
+    1.0.0 _ January 13, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#024-_-june-26-2016" title="0.2.4 _ June 26, 2016" class="md-nav__link">
+    0.2.4 _ June 26, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#023-_-may-16-2016" title="0.2.3 _ May 16, 2016" class="md-nav__link">
+    0.2.3 _ May 16, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#022-_-march-20-2016" title="0.2.2 _ March 20, 2016" class="md-nav__link">
+    0.2.2 _ March 20, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#021-_-march-12-2016" title="0.2.1 _ March 12, 2016" class="md-nav__link">
+    0.2.1 _ March 12, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#020-_-february-24-2016" title="0.2.0 _ February 24, 2016" class="md-nav__link">
+    0.2.0 _ February 24, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#013-_-february-21-2016" title="0.1.3 _ February 21, 2016" class="md-nav__link">
+    0.1.3 _ February 21, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#012-_-february-16-2016" title="0.1.2 _ February 16, 2016" class="md-nav__link">
+    0.1.2 _ February 16, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#011-_-february-11-2016" title="0.1.1 _ February 11, 2016" class="md-nav__link">
+    0.1.1 _ February 11, 2016
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#010-_-february-9-2016" title="0.1.0 _ February 9, 2016" class="md-nav__link">
+    0.1.0 _ February 9, 2016
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div id="article-content" class="md-content"> 
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/yakworks/docmark/edit/docmark/docs/release-notes.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                
+                <h1 id="release-notes">Release notes<a class="headerlink" href="#release-notes" title="Permanent link">&para;</a></h1>
+<h2 id="upgrading">Upgrading<a class="headerlink" href="#upgrading" title="Permanent link">&para;</a></h2>
+<p>To upgrade Material to the latest version, use pip:</p>
+<div class="codehilite"><pre><span></span>pip install --upgrade mkdocs-material
+</pre></div>
+
+<p>To determine the currently installed version, use the following command:</p>
+<div class="codehilite"><pre><span></span>pip show mkdocs-material <span class="p">|</span> grep -E ^Version
+<span class="c1"># Version 1.10.3</span>
+</pre></div>
+
+<h2 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h2>
+<h3 id="1103-_-october-11-2017">1.10.3 <small>_ October 11, 2017</small><a class="headerlink" href="#1103-_-october-11-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/484">#484</a>: Vertical scrollbar on some MathJax formulas</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/483">#483</a>: Footnote backref target offset regression</li>
+</ul>
+<h3 id="1102-_-october-6-2017">1.10.2 <small>_ October 6, 2017</small><a class="headerlink" href="#1102-_-october-6-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/468">#468</a>: Sidebar shows scrollbar if content is shorter (in Safari)</li>
+</ul>
+<h3 id="1101-_-september-14-2017">1.10.1 <small>_ September 14, 2017</small><a class="headerlink" href="#1101-_-september-14-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/455">#455</a>: Bold code blocks rendered with normal font weight</li>
+</ul>
+<h3 id="1100-_-september-1-2017">1.10.0 <small>_ September 1, 2017</small><a class="headerlink" href="#1100-_-september-1-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added support to make logo default icon configurable</li>
+<li>Fixed uninitialized overflow scrolling on main pane for iOS</li>
+<li>Fixed error in mobile navigation in case JavaScript is not available</li>
+<li>Fixed incorrect color transition for nested panes in mobile navigation</li>
+<li>Improved checkbox styles for Tasklist from PyMdown Extension package</li>
+</ul>
+<h3 id="190-_-august-29-2017">1.9.0 <small>_ August 29, 2017</small><a class="headerlink" href="#190-_-august-29-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added <code>info</code> (synonym: <code>todo</code>) style for Admonition</li>
+<li>Added <code>question</code> (synonym: <code>help</code>, <code>faq</code>) style for Admonition</li>
+<li>Added support for Details from PyMdown Extensions package</li>
+<li>Improved Admonition styles to match Details</li>
+<li>Improved styles for social links in footer</li>
+<li>Replaced ligatures with Unicode code points to avoid broken layout</li>
+<li>Upgraded PyMdown Extensions package dependency to &gt;= 3.4</li>
+</ul>
+<h3 id="181-_-august-7-2017">1.8.1 <small>_ August 7, 2017</small><a class="headerlink" href="#181-_-august-7-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/421">#421</a>: Missing pagination for GitHub API</li>
+</ul>
+<h3 id="180-_-august-2-2017">1.8.0 <small>_ August 2, 2017</small><a class="headerlink" href="#180-_-august-2-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added support for lazy-loading of search results for better performance</li>
+<li>Added support for customization of search tokenizer/separator</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/424">#424</a>: Search doesn't handle capital letters anymore</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/419">#419</a>: Search doesn't work on whole words</li>
+</ul>
+<h3 id="175-_-july-25-2017">1.7.5 <small>_ July 25, 2017</small><a class="headerlink" href="#175-_-july-25-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/398">#398</a>: Forms broken due to search shortcuts</li>
+<li>Improved search overall user experience</li>
+<li>Improved search matching and highlighting</li>
+<li>Improved search accessibility</li>
+</ul>
+<h3 id="174-_-june-21-2017">1.7.4 <small>_ June 21, 2017</small><a class="headerlink" href="#174-_-june-21-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed functional link colors in table of contents for active palette</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/368">#368</a>: Compatibility issues with IE11</li>
+</ul>
+<h3 id="173-_-june-7-2017">1.7.3 <small>_ June 7, 2017</small><a class="headerlink" href="#173-_-june-7-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed error when setting language to Japanese for site search</li>
+</ul>
+<h3 id="172-_-june-6-2017">1.7.2 <small>_ June 6, 2017</small><a class="headerlink" href="#172-_-june-6-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed offset of search box when <code>repo_url</code> is not set</li>
+<li>Fixed non-disappearing tooltip</li>
+</ul>
+<h3 id="171-_-june-1-2017">1.7.1 <small>_ June 1, 2017</small><a class="headerlink" href="#171-_-june-1-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed wrong <code>z-index</code> order of header, overlay and drawer</li>
+<li>Fixed wrong offset of targeted footnote back references</li>
+</ul>
+<h3 id="170-_-june-1-2017">1.7.0 <small>_ June 1, 2017</small><a class="headerlink" href="#170-_-june-1-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added "copy to clipboard" buttons to code blocks</li>
+<li>Added support for multilingual site search</li>
+<li>Fixed search term highlighting for non-latin languages</li>
+</ul>
+<h3 id="164-_-may-24-2017">1.6.4 <small>_ May 24, 2017</small><a class="headerlink" href="#164-_-may-24-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/337">#337</a>: JavaScript error for GitHub organization URLs</li>
+</ul>
+<h3 id="163-_-may-16-2017">1.6.3 <small>_ May 16, 2017</small><a class="headerlink" href="#163-_-may-16-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/329">#329</a>: Broken source stats for private or unknown GitHub repos</li>
+</ul>
+<h3 id="162-_-may-15-2017">1.6.2 <small>_ May 15, 2017</small><a class="headerlink" href="#162-_-may-15-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/316">#316</a>: Fatal error for git clone on Windows</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/320">#320</a>: Chrome 58 creates double underline for <code>abbr</code> tags</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/323">#323</a>: Ligatures rendered inside code blocks</li>
+<li>Fixed miscalculated sidebar height due to missing margin collapse</li>
+<li>Changed deprecated MathJax CDN to Cloudflare</li>
+</ul>
+<h3 id="161-_-april-23-2017">1.6.1 <small>_ April 23, 2017</small><a class="headerlink" href="#161-_-april-23-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed following of active/focused element if search input is focused</li>
+<li>Fixed layer order of search component elements</li>
+</ul>
+<h3 id="160-_-april-22-2017">1.6.0 <small>_ April 22, 2017</small><a class="headerlink" href="#160-_-april-22-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added build test for Docker image on Travis</li>
+<li>Added search overlay for better user experience (focus)</li>
+<li>Added language from localizations to <code>html</code> tag</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/270">#270</a>: source links broken for absolute URLs</li>
+<li>Fixed missing top spacing for first targeted element in content</li>
+<li>Fixed too small footnote divider when using larger font sizes</li>
+</ul>
+<h3 id="155-_-april-20-2017">1.5.5 <small>_ April 20, 2017</small><a class="headerlink" href="#155-_-april-20-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/282">#282</a>: Browser search (<kbd>Meta</kbd>+<kbd>F</kbd>) is hijacked</li>
+</ul>
+<h3 id="154-_-april-8-2017">1.5.4 <small>_ April 8, 2017</small><a class="headerlink" href="#154-_-april-8-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed broken highlighting for two or more search terms</li>
+<li>Fixed missing search results when only a <code>h1</code> is present</li>
+<li>Fixed unresponsive overlay on Android</li>
+</ul>
+<h3 id="153-_-april-7-2017">1.5.3 <small>_ April 7, 2017</small><a class="headerlink" href="#153-_-april-7-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed deprecated calls for template variables</li>
+<li>Fixed wrong palette color for focused search result</li>
+<li>Fixed JavaScript errors on 404 page</li>
+<li>Fixed missing top spacing on 404 page</li>
+<li>Fixed missing right spacing on overflow of source container</li>
+</ul>
+<h3 id="152-_-april-5-2017">1.5.2 <small>_ April 5, 2017</small><a class="headerlink" href="#152-_-april-5-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added requirements as explicit dependencies in <code>setup.py</code></li>
+<li>Fixed non-synchronized transitions in search form</li>
+</ul>
+<h3 id="151-_-march-30-2017">1.5.1 <small>_ March 30, 2017</small><a class="headerlink" href="#151-_-march-30-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed rendering and offset of targetted footnotes</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/238">#238</a>: Link on logo is not set to <code>site_url</code></li>
+</ul>
+<h3 id="150-_-march-24-2017">1.5.0 <small>_ March 24, 2017</small><a class="headerlink" href="#150-_-march-24-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added support for localization of search placeholder</li>
+<li>Added keyboard events for quick access of search</li>
+<li>Added keyboard events for search control</li>
+<li>Added opacity on hover for search buttons</li>
+<li>Added git hook to skip CI build on non-src changes</li>
+<li>Fixed non-resetting search placeholder when input is cleared</li>
+<li>Fixed error for unescaped parentheses in search term</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/229">#229</a>: Button to clear search missing</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/231">#231</a>: Escape key doesn't exit search</li>
+<li>Removed old-style figures from font feature settings</li>
+</ul>
+<h3 id="141-_-march-16-2017">1.4.1 <small>_ March 16, 2017</small><a class="headerlink" href="#141-_-march-16-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed invalid destructuring attempt on NodeList (in Safari, Edge, IE)</li>
+</ul>
+<h3 id="140-_-march-16-2017">1.4.0 <small>_ March 16, 2017</small><a class="headerlink" href="#140-_-march-16-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added support for grouping searched sections by documents</li>
+<li>Added support for highlighting of search terms</li>
+<li>Added support for localization of search results</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/216">#216</a>: table of contents icon doesn't show if <code>h1</code> is not present</li>
+<li>Reworked style and layout of search results for better usability</li>
+</ul>
+<h3 id="130-_-march-11-2017">1.3.0 <small>_ March 11, 2017</small><a class="headerlink" href="#130-_-march-11-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added support for page-specific title and description using metadata</li>
+<li>Added support for linking source files to documentation</li>
+<li>Fixed jitter and offset of sidebar when zooming browser</li>
+<li>Fixed incorrectly initialized tablet sidebar height</li>
+<li>Fixed regression for <a href="https://github.com/squidfunk/mkdocs-material/issues/1">#1</a>: GitHub stars break if <code>repo_url</code> ends with a <code>/</code></li>
+<li>Fixed undesired white line below copyright footer due to base font scaling</li>
+<li>Fixed issue with whitespace in path for scripts</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/205">#205</a>: support non-fixed (static) header</li>
+<li>Refactored footnote references for better visibility</li>
+<li>Reduced repaints to a minimum for non-tabs configuration</li>
+<li>Reduced contrast of edit button (slightly)</li>
+</ul>
+<h3 id="120-_-march-3-2017">1.2.0 <small>_ March 3, 2017</small><a class="headerlink" href="#120-_-march-3-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added <code>quote</code> (synonym: <code>cite</code>) style for Admonition</li>
+<li>Added help message to build pipeline</li>
+<li>Fixed wrong navigation link colors when applying palette</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/197">#197</a>: Link missing in tabs navigation on deeply nested items</li>
+<li>Removed unnecessary dev dependencies</li>
+</ul>
+<h3 id="111-_-february-26-2017">1.1.1 <small>_ February 26, 2017</small><a class="headerlink" href="#111-_-february-26-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed incorrectly displayed nested lists when using tabs</li>
+</ul>
+<h3 id="110-_-february-26-2017">1.1.0 <small>_ February 26, 2017</small><a class="headerlink" href="#110-_-february-26-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added tabs navigation feature (optional)</li>
+<li>Added Disqus integration (optional)</li>
+<li>Added a high resolution Favicon with the new logo</li>
+<li>Added static type checking using Facebook's Flow</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/173">#173</a>: Dictionary elements have no bottom spacing</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/175">#175</a>: Tables cannot be set to 100% width</li>
+<li>Fixed race conditions in build related to asset revisioning</li>
+<li>Fixed accidentally re-introduced Permalink on top-level headline</li>
+<li>Fixed alignment of logo in drawer on IE11</li>
+<li>Refactored styles related to tables</li>
+<li>Refactored and automated Docker build and PyPI release</li>
+<li>Refactored build scripts</li>
+</ul>
+<h3 id="105-_-february-18-2017">1.0.5 <small>_ February 18, 2017</small><a class="headerlink" href="#105-_-february-18-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/153">#153</a>: Sidebar flows out of constrained area in Chrome 56</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/159">#159</a>: Footer jitter due to JavaScript if content is short</li>
+</ul>
+<h3 id="104-_-february-16-2017">1.0.4 <small>_ February 16, 2017</small><a class="headerlink" href="#104-_-february-16-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/142">#142</a>: Documentation build errors if <code>h1</code> is defined as raw HTML</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/164">#164</a>: PyPI release does not build and install</li>
+<li>Fixed offsets of targeted headlines</li>
+<li>Increased sidebar font size by <code>0.12rem</code></li>
+</ul>
+<h3 id="103-_-january-22-2017">1.0.3 <small>_ January 22, 2017</small><a class="headerlink" href="#103-_-january-22-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/117">#117</a>: Table of contents items don't blur on fast scrolling</li>
+<li>Refactored sidebar positioning logic</li>
+<li>Further reduction of repaints</li>
+</ul>
+<h3 id="102-_-january-15-2017">1.0.2 <small>_ January 15, 2017</small><a class="headerlink" href="#102-_-january-15-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/108">#108</a>: Horizontal scrollbar in content area</li>
+</ul>
+<h3 id="101-_-january-14-2017">1.0.1 <small>_ January 14, 2017</small><a class="headerlink" href="#101-_-january-14-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed massive repaints happening when scrolling</li>
+<li>Fixed footer back reference positions in case of overflow</li>
+<li>Fixed header logo from showing when the menu icon is rendered</li>
+<li>Changed scrollbar behavior to only show when content overflows</li>
+</ul>
+<h3 id="100-_-january-13-2017">1.0.0 <small>_ January 13, 2017</small><a class="headerlink" href="#100-_-january-13-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Introduced Webpack for more sophisticated JavaScript bundling</li>
+<li>Introduced ESLint and Stylelint for code style checks</li>
+<li>Introduced more accurate Material Design colors and shadows</li>
+<li>Introduced modular scales for harmonic font sizing</li>
+<li>Introduced git-hooks for better development workflow</li>
+<li>Rewrite of CSS using the BEM methodology and SassDoc guidelines</li>
+<li>Rewrite of JavaScript using ES6 and Babel as a transpiler</li>
+<li>Rewrite of Admonition, Permalinks and CodeHilite integration</li>
+<li>Rewrite of the complete typographical system</li>
+<li>Rewrite of Gulp asset pipeline in ES6 and separation of tasks</li>
+<li>Removed Bower as a dependency in favor of NPM</li>
+<li>Removed custom icon build in favor of the Material Design iconset</li>
+<li>Removed <code>_blank</code> targets on links due to vulnerability: <a href="http://bit.ly/1Mk2Rtw">http://bit.ly/1Mk2Rtw</a></li>
+<li>Removed unversioned assets from build directory</li>
+<li>Restructured templates into base templates and partials</li>
+<li>Added build and watch scripts in <code>package.json</code></li>
+<li>Added support for Metadata and Footnotes Markdown extensions</li>
+<li>Added support for PyMdown Extensions package</li>
+<li>Added support for collapsible sections in navigation</li>
+<li>Added support for separate table of contents</li>
+<li>Added support for better accessibility through REM-based layout</li>
+<li>Added icons for GitHub, GitLab and BitBucket integrations</li>
+<li>Added more detailed documentation on specimen, extensions etc.</li>
+<li>Added a <code>404.html</code> error page for deployment on GitHub Pages</li>
+<li>Fixed live reload chain in watch mode when saving a template</li>
+<li>Fixed variable references to work with MkDocs 0.16</li>
+</ul>
+<h3 id="024-_-june-26-2016">0.2.4 <small>_ June 26, 2016</small><a class="headerlink" href="#024-_-june-26-2016" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed improperly set default favicon</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/25">#33</a>: Protocol relative URL for webfonts doesn't work with
+  <code>file://</code></li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/26">#34</a>: IE11 on Windows 7 doesn't honor <code>max-width</code> on <code>main</code> tag</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/30">#35</a>: Add styling for blockquotes</li>
+</ul>
+<h3 id="023-_-may-16-2016">0.2.3 <small>_ May 16, 2016</small><a class="headerlink" href="#023-_-may-16-2016" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/25">#25</a>: Highlight inline fenced blocks</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/26">#26</a>: Better highlighting for keystrokes</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/30">#30</a>: Suboptimal syntax highlighting for PHP</li>
+</ul>
+<h3 id="022-_-march-20-2016">0.2.2 <small>_ March 20, 2016</small><a class="headerlink" href="#022-_-march-20-2016" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/15">#15</a>: Document Pygments dependency for CodeHilite</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/16">#16</a>: Favicon could not be set through <code>mkdocs.yml</code></li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/17">#17</a>: Put version into own container for styling</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/20">#20</a>: Fix rounded borders for tables</li>
+</ul>
+<h3 id="021-_-march-12-2016">0.2.1 <small>_ March 12, 2016</small><a class="headerlink" href="#021-_-march-12-2016" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/10">#10</a>: Invisible header after closing search bar with
+  <kbd>ESC</kbd> key</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/13">#13</a>: Table cells don't wrap</li>
+<li>Fixed empty list in table of contents when no headline is defined</li>
+<li>Corrected wrong path for static asset monitoring in Gulpfile.js</li>
+<li>Set up tracking of site search for Google Analytics</li>
+</ul>
+<h3 id="020-_-february-24-2016">0.2.0 <small>_ February 24, 2016</small><a class="headerlink" href="#020-_-february-24-2016" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/6">#6</a>: Include multiple color palettes via <code>mkdocs.yml</code></li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/7">#7</a>: Better colors for links inside admonition notes and warnings</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/9">#9</a>: Text for prev/next footer navigation should be customizable</li>
+<li>Refactored templates (replaced <code>if</code>/<code>else</code> with modifiers where possible)</li>
+</ul>
+<h3 id="013-_-february-21-2016">0.1.3 <small>_ February 21, 2016</small><a class="headerlink" href="#013-_-february-21-2016" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/3">#3</a>: Ordered lists within an unordered list have <code>::before</code> content</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/4">#4</a>: Click on Logo/Title without Github-Repository: <code>&quot;None&quot;</code></li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/5">#5</a>: Page without headlines renders empty list in table of contents</li>
+<li>Moved Modernizr to top to ensure basic usability in IE8</li>
+</ul>
+<h3 id="012-_-february-16-2016">0.1.2 <small>_ February 16, 2016</small><a class="headerlink" href="#012-_-february-16-2016" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed styles for deep navigational hierarchies</li>
+<li>Fixed webfont delivery problem when hosted in subdirectories</li>
+<li>Fixed print styles in mobile/tablet configuration</li>
+<li>Added option to configure fonts in <code>mkdocs.yml</code> with fallbacks</li>
+<li>Changed styles for admonition notes and warnings</li>
+<li>Set download link to latest version if available</li>
+<li>Set up tracking of outgoing links and actions for Google Analytics</li>
+</ul>
+<h3 id="011-_-february-11-2016">0.1.1 <small>_ February 11, 2016</small><a class="headerlink" href="#011-_-february-11-2016" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/1">#1</a>: GitHub stars don't work if the repo_url ends with a <code>/</code></li>
+<li>Updated NPM and Bower dependencies to most recent versions</li>
+<li>Changed footer/copyright link to Material theme to GitHub pages</li>
+<li>Made MkDocs building/serving in build process optional</li>
+<li>Set up continuous integration with <a href="https://travis-ci.org">Travis</a></li>
+</ul>
+<h3 id="010-_-february-9-2016">0.1.0 <small>_ February 9, 2016</small><a class="headerlink" href="#010-_-february-9-2016" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Initial release</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../license/" title="License" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                License
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../specimen/" title="Specimen" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Specimen
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 Joshua Burnett
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://yakworks.github.io/docmark/" title="MkDocs Docmark Theme">
+          Material Components for MkDocs</a>
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-ea76b28b63.js"></script>
+      
+      
+      <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+      <script>window.mdc.autoInit()</script>
+      <script src="../assets/javascripts/headroom.min.js"></script>
+      <script src="../assets/javascripts/jQuery.headroom.min.js"></script>
+      <script src="../assets/javascripts/jq-mdc-web.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.loadingoverlay/latest/loadingoverlay.min.js"></script>
+      <script>app.initialize({version:"0.16.3",url:{base:".."}})</script>
+      
+    
+    
+  </body>
+</html>

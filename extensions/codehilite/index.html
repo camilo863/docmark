@@ -8,10 +8,10 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <meta name="description" content="A Material Design Components theme for MkDocs">
+        <meta name="description" content="Enhanced theme for MkDocs">
       
       
-        <link rel="canonical" href="http://yakworks.github.io/mkdocs-material-components/extensions/codehilite/">
+        <link rel="canonical" href="http://yakworks.github.io/docmark/extensions/codehilite/">
       
       
         <meta name="author" content="Joshua Burnett">
@@ -19,23 +19,23 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.11">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-docmark-1.10.14">
     
     
       
-        <title>CodeHilite - MkDocs Material Components</title>
+        <title>Codehilite - MkDocs Docmark</title>
       
     
     
       
     
     
-      <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
+      <script src="../../assets/javascripts/modernizr-b36cc87056.js"></script>
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-2cd7d9ab0f.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-8c4c8d1e34.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-035c261bc5.palette.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-4b0996440c.palette.css">
       
       <link rel="stylesheet" href="../../assets/stylesheets/material-components-web.min.css">
       <link rel="stylesheet" href="../../assets/stylesheets/mdc-web.css">
@@ -60,13 +60,30 @@
   
   
   
-    <body data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+    <body data-md-color-primary="orange" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
         
       </defs>
     </svg>
@@ -78,24 +95,21 @@
       
         <style>.region--header{background-color:rgba(255,255,255,.9);min-height:3.25rem;width:100%;z-index:2}header.region--header{position:fixed;top:0;right:0;left:0}.region--header .region--header__wrapper{max-width:1440px;margin-left:auto;margin-right:auto;position:relative;z-index:2;box-sizing:inherit}.region--header .region--header__logo{display:inline-block;float:left;height:3.25rem;margin:0;padding-left:1rem}.site-logo{display:block;height:4.25rem;padding:1.5rem 0}.site-logo--main{display:block;height:3.25rem;margin:0;padding:0;width:4.25rem}.header-navigation{font-size:1rem;clear:none;float:right;margin-top:.75rem;padding-bottom:0;padding-right:.75rem}.header-navigation__menu{clear:both;overflow:visible;-webkit-transform-style:preserve-3d;width:100%;z-index:9999;display:inline;margin:0;padding:0}.header-navigation__menu-link{display:inline;line-height:1.5;margin-right:0;padding-right:0;width:auto;overflow:hidden;text-align:right;z-index:2}.region--header a{text-decoration:none}.header-navigation__menu-link a{padding-left:.75rem;padding-right:.75rem;color:#012b45;display:inline-block;font-weight:400;text-transform:uppercase;transition:background-color ease .2s}@media only screen and (max-width:500px){.header-navigation{font-size:.85rem}.header-navigation__menu-link a{padding-left:.25rem;padding-right:.25rem}}.header-navigation__menu-link:last-child:not(.header-navigation__active-nav-item):not(:hover):not(:focus){color:#e8650c}.header-navigation__menu-link a:focus,.header-navigation__menu-link a:hover{color:#e8650c}.md-container{padding-top:6.5rem}#header-docs{top:3.25rem}#background{display:none}#header-docs .md-logo{display:none}</style>
 <style media="print">#header-docs{top:0}#header-docs .md-logo{display:block}#header-website{display:none}.md-container{padding-top:0}.headroom--pinned{transform:translateY(0)}#background{position:fixed;top:250px;left:50px;z-index:9999999;background:0 0;min-height:30%;min-width:30%;display:block}#bg-text{color:rgba(211,211,211,.2);font-size:80px;transform:rotate(300deg);-webkit-transform:rotate(300deg)}</style>
-<div id="background">
-  <p id="bg-text">9ci Confidential</p>
-</div>
 <header id="header-website" class="region--header" role="banner">
   <div class="region--header__wrapper">
     <a href="/" class="region--header__logo">
-      <img src="http://www.9ci.com/assets/img/logo.svg" alt="9ci logo" class="site-logo site-logo--main">
+      <img src="https://www.9ci.com/assets/img/logo.svg" alt="9ci logo" class="site-logo site-logo--main">
     </a>
     <nav role="navigation" class="header-navigation">
       <ul id="js-navigation-menu" class="header-navigation__menu">
       <li class="header-navigation__menu-link">
-        <a href="http://www.9ci.com/solutions">Solutions</a>
+        <a href="https://www.9ci.com/solutions">Solutions</a>
       </li>
       <li class="header-navigation__menu-link">
-        <a href="http://www.9ci.com/company">Company</a>
+        <a href="https://www.9ci.com/company">Company</a>
       </li>
       <li class="header-navigation__menu-link">
-        <a href="http://www.9ci.com/contact">Contact</a>
+        <a href="https://www.9ci.com/contact">Contact</a>
       </li>
       </ul>
     </nav>
@@ -105,7 +119,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink md-flex__cell--vmiddle">
-        <a href="http://yakworks.github.io/mkdocs-material-components/" title="MkDocs Material Components" class="md-header-nav__button md-logo">
+        <a href="http://yakworks.github.io/docmark/" title="MkDocs Docmark" class="md-header-nav__button md-logo">
           
             <img src="../../assets/images/logo_white.png" width="36" height="36">
           
@@ -117,7 +131,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           
-            MkDocs Material Components -
+            MkDocs Docmark -
             
               
                 <span class="md-header-nav__parent">
@@ -125,7 +139,7 @@
                 </span>
               
             
-            CodeHilite
+            Codehilite
           
         </span>
       </div>
@@ -164,7 +178,7 @@
   
 
 
-  <a href="https://github.com/yakworks/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/yakworks/docmark" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -173,7 +187,7 @@
       </div>
     
     <div class="md-source__repository">
-      yakworks/mkdocs-material-components
+      yakworks/docmark
     </div>
   </a>
 
@@ -204,7 +218,7 @@
         <i class="md-icon md-icon--home"></i>
       
     </div>
-    MkDocs Material Components
+    MkDocs Docmark
   </label>
   
     <div class="md-nav__source">
@@ -214,7 +228,7 @@
   
 
 
-  <a href="https://github.com/yakworks/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/yakworks/docmark" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -223,7 +237,7 @@
       </div>
     
     <div class="md-source__repository">
-      yakworks/mkdocs-material-components
+      yakworks/docmark
     </div>
   </a>
 
@@ -237,8 +251,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Intro" class="md-nav__link">
-      Intro
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
     </a>
   </li>
 
@@ -249,8 +263,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cheat-sheet/" title="Cheat Sheet" class="md-nav__link">
-      Cheat Sheet
+    <a href="../../blocks/" title="Blocks" class="md-nav__link">
+      Blocks
     </a>
   </li>
 
@@ -261,8 +275,80 @@
 
 
   <li class="md-nav__item">
-    <a href="../../blocks/" title="Admonitions, callouts, sidebars" class="md-nav__link">
-      Admonitions, callouts, sidebars
+    <a href="../../cheat-sheet/" title="Cheat sheet" class="md-nav__link">
+      Cheat sheet
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../customization/" title="Customization" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../release-notes/" title="Release notes" class="md-nav__link">
+      Release notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../specimen/" title="Specimen" class="md-nav__link">
+      Specimen
     </a>
   </li>
 
@@ -274,41 +360,17 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
     
-    <label class="md-nav__link" for="nav-4">
-      Embedding web apps
+    <label class="md-nav__link" for="nav-10">
+      Embedding
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        Embedding web apps
+      <label class="md-nav__title" for="nav-10">
+        Embedding
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../embedding/excel/" title="Excel" class="md-nav__link">
-      Excel
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../embedding/lucid/" title="Lucid Charts" class="md-nav__link">
-      Lucid Charts
-    </a>
-  </li>
-
         
           
           
@@ -328,8 +390,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../embedding/jing/" title="Snagit & Jing" class="md-nav__link">
-      Snagit & Jing
+    <a href="../../embedding/excel/" title="Excel" class="md-nav__link">
+      Excel
     </a>
   </li>
 
@@ -346,20 +408,32 @@
   </li>
 
         
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
+          
+          
+          
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/" title="Install & Config" class="md-nav__link">
-      Install & Config
+    <a href="../../embedding/jing/" title="Jing" class="md-nav__link">
+      Jing
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../embedding/lucid/" title="Lucid" class="md-nav__link">
+      Lucid
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -372,13 +446,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-11">
       Extensions
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-11">
         Extensions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -411,11 +485,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        CodeHilite
+        Codehilite
       </label>
     
-    <a href="./" title="CodeHilite" class="md-nav__link md-nav__link--active">
-      CodeHilite
+    <a href="./" title="Codehilite" class="md-nav__link md-nav__link--active">
+      Codehilite
     </a>
     
       
@@ -721,38 +795,14 @@
 
 
   <li class="md-nav__item">
-    <a href="../pymdown/" title="PyMdown" class="md-nav__link">
-      PyMdown
+    <a href="../pymdown/" title="Pymdown" class="md-nav__link">
+      Pymdown
     </a>
   </li>
 
         
       </ul>
     </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../specimen/" title="Specimen" class="md-nav__link">
-      Specimen
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../customization/" title="Customization" class="md-nav__link">
-      Customization
-    </a>
   </li>
 
     
@@ -1032,7 +1082,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/yakworks/mkdocs-material-components/edit/material-components-web/docs/extensions/codehilite.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/yakworks/docmark/edit/docmark/docs/extensions/codehilite.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 
@@ -1047,25 +1097,25 @@ further directions on how to set up Pygments or use the official
 <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">Docker image</a> with all dependencies pre-installed.</p>
 </div>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<p>CodeHilite parses code blocks and wraps them in <code class="codehilite">pre</code> tags. If <a href="http://pygments.org">Pygments</a>
+<p>CodeHilite parses code blocks and wraps them in <code>pre</code> tags. If <a href="http://pygments.org">Pygments</a>
 is installed, which is a generic syntax highlighter with support for over
 <a href="http://pygments.org/languages">300 languages</a>, CodeHilite will also highlight the code block. Pygments can
 be installed with the following command:</p>
 <div class="codehilite"><pre><span></span>pip install pygments
 </pre></div>
 
-<p>To enable CodeHilite, add the following lines to your <code class="codehilite">mkdocs.yml</code>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
+<p>To enable CodeHilite, add the following lines to your <code>mkdocs.yml</code>:</p>
+<div class="codehilite"><pre><span></span><span class="nt">markdown_extensions</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite</span>
 </pre></div>
 
 <div class="admonition warning">
 <p class="admonition-title">Migrating from Material 0.2.x</p>
 <p>In 0.2.x the CodeHilite extension was included with
-<code class="codehilite">codehilite(css_class=code)</code> which switched the CSS class from
-<code class="codehilite"><span class="na">.codehilite</span></code> to <code class="codehilite"><span class="na">.code</span></code>. The current version of the theme doesn't require
-that and defines styles for the default <code class="codehilite"><span class="na">.codehilite</span></code> class, so the part
-<code class="codehilite">css_class=code</code> needs to be removed.</p>
+<code>codehilite(css_class=code)</code> which switched the CSS class from
+<code>.codehilite</code> to <code>.code</code>. The current version of the theme doesn't require
+that and defines styles for the default <code>.codehilite</code> class, so the part
+<code>css_class=code</code> needs to be removed.</p>
 </div>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h3 id="specifying-the-language">Specifying the language<a class="headerlink" href="#specifying-the-language" title="Permanent link">&para;</a></h3>
@@ -1077,13 +1127,13 @@ different ways.</p>
 separate lines. To add code highlighting to those blocks, the easiest way is
 to specify the language directly after the opening block.</p>
 <p>Example:</p>
-<div class="codehilite"><pre><span></span><span class="sb">``</span><span class="err">`</span> <span class="n">python</span>
-<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
-<span class="sb">``</span><span class="err">`</span>
+<div class="codehilite"><pre><span></span>``` python
+import tensorflow as tf
+```
 </pre></div>
 
 <p>Result:</p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
 </pre></div>
 
 <h4 id="via-shebang">via Shebang<a class="headerlink" href="#via-shebang" title="Permanent link">&para;</a></h4>
@@ -1092,13 +1142,13 @@ language is derived from the path referenced in the shebang. This will only
 work for code blocks that are indented using four spaces, not for those
 encapsulated in three backticks.</p>
 <p>Example:</p>
-<div class="codehilite"><pre><span></span>    <span class="c1">#!/usr/bin/python</span>
-    <span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+<div class="codehilite"><pre><span></span>    #!/usr/bin/python
+    import tensorflow as tf
 </pre></div>
 
 <p>Result:</p>
 <div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/python</span>
-<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
 </pre></div>
 
 <h4 id="via-three-colons">via three colons<a class="headerlink" href="#via-three-colons" title="Permanent link">&para;</a></h4>
@@ -1106,18 +1156,18 @@ encapsulated in three backticks.</p>
 the first line is stripped. This will only work for code blocks that are
 indented using four spaces, not for those encapsulated in three backticks.</p>
 <p>Example:</p>
-<div class="codehilite"><pre><span></span>    <span class="p">:::</span><span class="n">python</span>
-    <span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+<div class="codehilite"><pre><span></span>    :::python
+    import tensorflow as tf
 </pre></div>
 
 <p>Result:</p>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
 </pre></div>
 
 
 <h3 id="adding-line-numbers">Adding line numbers<a class="headerlink" href="#adding-line-numbers" title="Permanent link">&para;</a></h3>
-<p>Line numbers can be added by enabling the <code class="codehilite">linenums</code> flag in your <code class="codehilite">mkdocs.yml</code>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
+<p>Line numbers can be added by enabling the <code>linenums</code> flag in your <code>mkdocs.yml</code>:</p>
+<div class="codehilite"><pre><span></span><span class="nt">markdown_extensions</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite(linenums=true)</span>
 </pre></div>
 
@@ -1148,7 +1198,7 @@ def bubble_sort(items):
 </td></tr></table>
 
 <h3 id="highlighting-specific-lines">Highlighting specific lines<a class="headerlink" href="#highlighting-specific-lines" title="Permanent link">&para;</a></h3>
-<p>Specific lines can be highlighted by passing the line numbers to the <code class="codehilite">hl_lines</code>
+<p>Specific lines can be highlighted by passing the line numbers to the <code>hl_lines</code>
 argument placed right after the language identifier. Line counts start at 1.</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span>``` python hl_lines=&quot;3 4&quot;
@@ -1381,7 +1431,7 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 </pre></div>
 
 <h3 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><span class="k">FROM</span><span class="s"> ubuntu</span>
+<div class="codehilite"><pre><span></span><span class="k">FROM</span> <span class="s">ubuntu</span>
 
 <span class="c"># Install vnc, xvfb in order to create a &#39;fake&#39; display and firefox</span>
 <span class="k">RUN</span> apt-get update <span class="o">&amp;&amp;</span> apt-get install -y x11vnc xvfb firefox
@@ -1394,7 +1444,7 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="k">RUN</span> bash -c <span class="s1">&#39;echo &quot;firefox&quot; &gt;&gt; /.bashrc&#39;</span>
 
 <span class="k">EXPOSE</span><span class="s"> 5900</span>
-<span class="k">CMD</span><span class="s"> [&quot;x11vnc&quot;, &quot;-forever&quot;, &quot;-usepw&quot;, &quot;-create&quot;]</span>
+<span class="k">CMD</span> <span class="p">[</span><span class="s2">&quot;x11vnc&quot;</span><span class="p">,</span> <span class="s2">&quot;-forever&quot;</span><span class="p">,</span> <span class="s2">&quot;-usepw&quot;</span><span class="p">,</span> <span class="s2">&quot;-create&quot;</span><span class="p">]</span>
 </pre></div>
 
 <h3 id="elixir">Elixir<a class="headerlink" href="#elixir" title="Permanent link">&para;</a></h3>
@@ -1531,49 +1581,49 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 </pre></div>
 
 <h3 id="java">Java<a class="headerlink" href="#java" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.LinkedList</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.lang.reflect.Array</span><span class="o">;</span>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.LinkedList</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.lang.reflect.Array</span><span class="p">;</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">UnsortedHashSet</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;</span> <span class="o">{</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">UnsortedHashSet</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;</span> <span class="p">{</span>
 
-  <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">double</span> <span class="n">LOAD_FACTOR_LIMIT</span> <span class="o">=</span> <span class="mf">0.7</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">double</span> <span class="n">LOAD_FACTOR_LIMIT</span> <span class="o">=</span> <span class="mf">0.7</span><span class="p">;</span>
 
-  <span class="kd">private</span> <span class="kt">int</span> <span class="n">size</span><span class="o">;</span>
-  <span class="kd">private</span> <span class="n">LinkedList</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;[]</span> <span class="n">con</span><span class="o">;</span>
+  <span class="kd">private</span> <span class="kt">int</span> <span class="n">size</span><span class="p">;</span>
+  <span class="kd">private</span> <span class="n">LinkedList</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;[]</span> <span class="n">con</span><span class="p">;</span>
 
-  <span class="kd">public</span> <span class="nf">UnsortedHashSet</span><span class="o">()</span> <span class="o">{</span>
-    <span class="n">con</span>  <span class="o">=</span> <span class="o">(</span><span class="n">LinkedList</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;[])(</span><span class="k">new</span> <span class="n">LinkedList</span><span class="o">[</span><span class="mi">10</span><span class="o">]);</span>
-  <span class="o">}</span>
+  <span class="kd">public</span> <span class="nf">UnsortedHashSet</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">con</span>  <span class="o">=</span> <span class="p">(</span><span class="n">LinkedList</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;[]</span><span class="p">)(</span><span class="k">new</span> <span class="n">LinkedList</span><span class="o">[</span><span class="mi">10</span><span class="o">]</span><span class="p">);</span>
+  <span class="p">}</span>
 
-  <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">add</span><span class="o">(</span><span class="n">E</span> <span class="n">obj</span><span class="o">)</span> <span class="o">{</span>
-    <span class="kt">int</span> <span class="n">oldSize</span> <span class="o">=</span> <span class="n">size</span><span class="o">;</span>
-    <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">Math</span><span class="o">.</span><span class="na">abs</span><span class="o">(</span><span class="n">obj</span><span class="o">.</span><span class="na">hashCode</span><span class="o">())</span> <span class="o">%</span> <span class="n">con</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
-    <span class="k">if</span> <span class="o">(</span><span class="n">con</span><span class="o">[</span><span class="n">index</span><span class="o">]</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span>
-      <span class="n">con</span><span class="o">[</span><span class="n">index</span><span class="o">]</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LinkedList</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;();</span>
-    <span class="k">if</span> <span class="o">(!</span><span class="n">con</span><span class="o">[</span><span class="n">index</span><span class="o">].</span><span class="na">contains</span><span class="o">(</span><span class="n">obj</span><span class="o">))</span> <span class="o">{</span>
-      <span class="n">con</span><span class="o">[</span><span class="n">index</span><span class="o">].</span><span class="na">add</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>
-      <span class="n">size</span><span class="o">++;</span>
-    <span class="o">}</span>
-    <span class="k">if</span> <span class="o">(</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">size</span> <span class="o">/</span> <span class="n">con</span><span class="o">.</span><span class="na">length</span> <span class="o">&gt;</span> <span class="n">LOAD_FACTOR_LIMIT</span><span class="o">)</span>
-      <span class="n">resize</span><span class="o">();</span>
-    <span class="k">return</span> <span class="n">oldSize</span> <span class="o">!=</span> <span class="n">size</span><span class="o">;</span>
-  <span class="o">}</span>
+  <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">add</span><span class="p">(</span><span class="n">E</span> <span class="n">obj</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">oldSize</span> <span class="o">=</span> <span class="n">size</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">(</span><span class="n">obj</span><span class="p">.</span><span class="na">hashCode</span><span class="p">())</span> <span class="o">%</span> <span class="n">con</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">con</span><span class="o">[</span><span class="n">index</span><span class="o">]</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span>
+      <span class="n">con</span><span class="o">[</span><span class="n">index</span><span class="o">]</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LinkedList</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">con</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">obj</span><span class="p">))</span> <span class="p">{</span>
+      <span class="n">con</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">obj</span><span class="p">);</span>
+      <span class="n">size</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">size</span> <span class="o">/</span> <span class="n">con</span><span class="p">.</span><span class="na">length</span> <span class="o">&gt;</span> <span class="n">LOAD_FACTOR_LIMIT</span><span class="p">)</span>
+      <span class="n">resize</span><span class="p">();</span>
+    <span class="k">return</span> <span class="n">oldSize</span> <span class="o">!=</span> <span class="n">size</span><span class="p">;</span>
+  <span class="p">}</span>
 
-  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">resize</span><span class="o">()</span> <span class="o">{</span>
-    <span class="n">UnsortedHashSet</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">UnsortedHashSet</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;();</span>
-    <span class="n">temp</span><span class="o">.</span><span class="na">con</span> <span class="o">=</span> <span class="o">(</span><span class="n">LinkedList</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;[])(</span><span class="k">new</span> <span class="n">LinkedList</span><span class="o">[</span><span class="n">con</span><span class="o">.</span><span class="na">length</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]);</span>
-    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">con</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-      <span class="k">if</span> <span class="o">(</span><span class="n">con</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
-        <span class="k">for</span> <span class="o">(</span><span class="n">E</span> <span class="n">e</span> <span class="o">:</span> <span class="n">con</span><span class="o">[</span><span class="n">i</span><span class="o">])</span>
-          <span class="n">temp</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
-    <span class="o">}</span>
-    <span class="n">con</span> <span class="o">=</span> <span class="n">temp</span><span class="o">.</span><span class="na">con</span><span class="o">;</span>
-  <span class="o">}</span>
+  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">resize</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">UnsortedHashSet</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">UnsortedHashSet</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;</span><span class="p">();</span>
+    <span class="n">temp</span><span class="p">.</span><span class="na">con</span> <span class="o">=</span> <span class="p">(</span><span class="n">LinkedList</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;[]</span><span class="p">)(</span><span class="k">new</span> <span class="n">LinkedList</span><span class="o">[</span><span class="n">con</span><span class="p">.</span><span class="na">length</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">con</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">con</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">)</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">E</span> <span class="n">e</span> <span class="p">:</span> <span class="n">con</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span>
+          <span class="n">temp</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">con</span> <span class="o">=</span> <span class="n">temp</span><span class="p">.</span><span class="na">con</span><span class="p">;</span>
+  <span class="p">}</span>
 
-  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">size</span><span class="o">()</span> <span class="o">{</span>
-    <span class="k">return</span> <span class="n">size</span><span class="o">;</span>
-  <span class="o">}</span>
-<span class="o">}</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">size</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">size</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 
 <h3 id="javascript">JavaScript<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h3>
@@ -1745,18 +1795,18 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="c1"># Import data</span>
 <span class="kn">from</span> <span class="nn">tensorflow.examples.tutorials.mnist</span> <span class="kn">import</span> <span class="n">input_data</span>
 
-<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
 
 <span class="n">flags</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">app</span><span class="o">.</span><span class="n">flags</span>
 <span class="n">FLAGS</span> <span class="o">=</span> <span class="n">flags</span><span class="o">.</span><span class="n">FLAGS</span>
 <span class="n">flags</span><span class="o">.</span><span class="n">DEFINE_string</span><span class="p">(</span><span class="s1">&#39;data_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;/tmp/data/&#39;</span><span class="p">,</span> <span class="s1">&#39;Directory for storing data&#39;</span><span class="p">)</span>
 
-<span class="n">mnist</span> <span class="o">=</span> <span class="n">input_data</span><span class="o">.</span><span class="n">read_data_sets</span><span class="p">(</span><span class="n">FLAGS</span><span class="o">.</span><span class="n">data_dir</span><span class="p">,</span> <span class="n">one_hot</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">mnist</span> <span class="o">=</span> <span class="n">input_data</span><span class="o">.</span><span class="n">read_data_sets</span><span class="p">(</span><span class="n">FLAGS</span><span class="o">.</span><span class="n">data_dir</span><span class="p">,</span> <span class="n">one_hot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="n">sess</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">InteractiveSession</span><span class="p">()</span>
 
 <span class="c1"># Create the model</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="p">[</span><span class="bp">None</span><span class="p">,</span> <span class="mi">784</span><span class="p">])</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">784</span><span class="p">])</span>
 <span class="n">W</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">784</span><span class="p">,</span> <span class="mi">10</span><span class="p">]))</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">10</span><span class="p">]))</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">W</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
@@ -1872,13 +1922,13 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016 - 2017 Martin Donath, changes by Joshua Burnett
+            Copyright &copy; 2020 Joshua Burnett
           </div>
         
         powered by
         <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
         and
-        <a href="http://yakworks.github.io/mkdocs-material-components/" title="Material Components for MkDocs">
+        <a href="http://yakworks.github.io/docmark/" title="MkDocs Docmark Theme">
           Material Components for MkDocs</a>
       </div>
     </div>
@@ -1887,7 +1937,7 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
       
     </div>
     
-      <script src="../../assets/javascripts/application-68832431b5.js"></script>
+      <script src="../../assets/javascripts/application-ea76b28b63.js"></script>
       
       
       <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
