@@ -2,6 +2,7 @@
 theme: 'docmark'
 
 site_dir: build/site
+dev_addr: 0.0.0.0:8000
 
 # Options
 extra:
@@ -55,5 +56,3 @@ markdown_extensions:
   # - pymdownx.magiclink
   # - pymdownx.superfences
   # - pymdownx.tilde
-
-dev_addr: 0.0.0.0:8000

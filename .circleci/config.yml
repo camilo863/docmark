@@ -1,0 +1,53 @@
+version: 2.1
+jobs:
+  ghpages:
+    docker:
+      # specify the version you desire here
+      - image: yakworks/docmark
+
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "32:15:5c:47:98:e9:3f:09:f9:32:c9:22:00:cc:15:9a"
+      # make sure its updated
+      - run: docmark build
+      - run: |
+          git config --global user.name "9cibot"
+          git config --global user.email "9cibot@9ci.com"
+
+          git clone -b gh-pages https://dummy:${GRGIT_USER}@github.com/yakworks/docmark.git gh-pages --single-branch --depth 1
+
+          cp -r build/site/. gh-pages/
+          cd gh-pages
+
+          git add .
+          git commit -a -m "CI built and pushed [skip ci]"
+          git push origin HEAD   
+  docker:
+    executor: docker-publisher
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run: echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USER" --password-stdin
+      - run: |
+          ./deploy/build.sh
+          docker push yakworks/docmark
+      - run: |
+          cd ./deploy/docmark-nginx
+          docker build -t yakworks/docmark-nginx .
+          docker push yakworks/docmark-nginx
+workflows:
+  version: 2
+  build:
+    jobs:
+      - ghpages:
+          context: bot-context 
+          filters:
+            branches:
+              only: docmark
+      - docker:
+          context: bot-context
+          filters:
+            branches:
+              only: docmark

@@ -6,16 +6,11 @@ RUN chmod +x /usr/bin/yq
 
 # git to download, gettext for envsubst command, apache2-utils for htpasswd.
 RUN apk update && apk add --no-cache \
-	git sed make inotify-tools build-base
+	git sed make inotify-tools && \
+  rm -rf /var/cache/apk/*
 
 # Set build directory
 WORKDIR /tmp
-
-RUN git clone https://github.com/eradman/entr.git
-WORKDIR /tmp/entr
-RUN ./configure && make test && make install
-RUN apk del build-base && \
-    rm -rf /var/cache/apk/*
 
 # Copy files necessary for build
 COPY material material
