@@ -1,28 +1,21 @@
-# Copyright (c) 2016-2017 Martin Donath <martin.donath@squidfunk.com>
+FROM yakworks/nginx-python
 
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to
-# deal in the Software without restriction, including without limitation the
-# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-# sell copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
+# installs yq, https://github.com/mikefarah/yq
+COPY --from=mikefarah/yq:3.3.0 /usr/bin/yq /usr/bin/yq
+RUN chmod +x /usr/bin/yq
 
-# The above copyright notice and this permission notice shall be included in
-# all copies or substantial portions of the Software.
-
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-# IN THE SOFTWARE.
-
-FROM jfloff/alpine-python:2.7-slim
-MAINTAINER Martin Donath <martin.donath@squidfunk.com>
+# git to download, gettext for envsubst command, apache2-utils for htpasswd.
+RUN apk update && apk add --no-cache \
+	git sed make inotify-tools build-base
 
 # Set build directory
 WORKDIR /tmp
+
+RUN git clone https://github.com/eradman/entr.git
+WORKDIR /tmp/entr
+RUN ./configure && make test && make install
+RUN apk del build-base && \
+    rm -rf /var/cache/apk/*
 
 # Copy files necessary for build
 COPY material material
@@ -32,16 +25,22 @@ COPY requirements.txt requirements.txt
 COPY setup.py setup.py
 
 # Perform build and cleanup artifacts
-RUN \
-  python setup.py install 2>/dev/null && \
+RUN pip install --no-cache-dir . && \
   rm -rf /tmp/*
 
+# install the yml merge tool
+RUN pip install HiYaPyCo
+
+COPY deploy/yml-merge.py deploy/yml-merge.sh /opt/docmark/
+COPY deploy/mkdocs-defaults.yml /opt/docmark/
+COPY deploy/docmark /usr/local/bin/
+
 # Set working directory
-WORKDIR /docs
+WORKDIR /project
 
 # Expose MkDocs development server port
 EXPOSE 8000
 
 # Start development server by default
-ENTRYPOINT ["mkdocs"]
+ENTRYPOINT ["docmark"]
 CMD ["serve", "--dev-addr=0.0.0.0:8000"]

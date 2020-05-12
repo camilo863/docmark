@@ -27,7 +27,7 @@
       {% else %}
         <link rel="shortcut icon" href="{{ base_url }}/assets/images/favicon.png">
       {% endif %}
-      <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-components-1.10.5">
+      <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-docmark-1.10.14">
     {% endblock %}
     {% block htmltitle %}
       {% if page and page.meta.title %}
@@ -38,13 +38,19 @@
         <title>{{ config.site_name }}</title>
       {% endif %}
     {% endblock %}
+    {% block analytics %}
+      {% if config.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.google_analytics[0] }}"></script>
+      <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","{{ config.google_analytics[0] }}")</script>
+      {% endif %}
+    {% endblock %}
     {% block libs %}
-      <script src="{{ base_url }}/assets/javascripts/modernizr-e826f8942a.js"></script>
+      <script src="{{ base_url }}/assets/javascripts/modernizr-b36cc87056.js"></script>
     {% endblock %}
     {% block styles %}
-      <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application-2cd7d9ab0f.css">
+      <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application-8c4c8d1e34.css">
       {% if config.extra.palette %}
-        <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application-035c261bc5.palette.css">
+        <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application-4b0996440c.palette.css">
       {% endif %}
       <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/material-components-web.min.css">
       <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/mdc-web.css">
@@ -80,11 +86,11 @@
       <defs>
         {% set platform = config.extra.repo_icon or config.repo_url %}
         {% if "github" in platform %}
-          {% include "assets/images/icons/github-1da075986e.svg" %}
+          {% include "assets/images/icons/github-a4034fb140.svg" %}
         {% elif "gitlab" in platform %}
-          {% include "assets/images/icons/gitlab-5ad3f9f9e5.svg" %}
+          {% include "assets/images/icons/gitlab-d80e5efcbf.svg" %}
         {% elif "bitbucket" in platform %}
-          {% include "assets/images/icons/bitbucket-670608a71a.svg" %}
+          {% include "assets/images/icons/bitbucket-4ebea66eef.svg" %}
         {% endif %}
       </defs>
     </svg>
@@ -95,7 +101,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     {% block header %}
-      {% include "partials/header.html" %}
+      {% if "yakworks" in config.site_url or "9ci" in config.site_url %}
+        {% include "partials/header9.html" %}
+      {% else %}
+        {% include "partials/header.html" %}
+      {% endif %}
     {% endblock %}
     <div class="md-container">
       {% set feature = config.extra.get("feature", {}) %}
@@ -167,7 +177,7 @@
       {% endblock %}
     </div>
     {% block scripts %}
-      <script src="{{ base_url }}/assets/javascripts/application-ee5842b7dc.js"></script>
+      <script src="{{ base_url }}/assets/javascripts/application-ea76b28b63.js"></script>
       {% set languages = lang.t("search.languages").split(",") %}
       {% if languages | length and languages[0] != "" %}
         {% set path = base_url + "/assets/javascripts/lunr" %}
@@ -186,17 +196,17 @@
       {% endif %}
       <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
       <script>window.mdc.autoInit()</script>
+      <script src="{{ base_url }}/assets/javascripts/headroom.min.js"></script>
+      <script src="{{ base_url }}/assets/javascripts/jQuery.headroom.min.js"></script>
       <script src="{{ base_url }}/assets/javascripts/jq-mdc-web.js"></script>
       <script src="https://cdn.jsdelivr.net/jquery.loadingoverlay/latest/loadingoverlay.min.js"></script>
-      <script>app.initialize({url:{base:"{{ base_url }}"}})</script>
+      <script>app.initialize({version:"{{ mkdocs_version }}",url:{base:"{{ base_url }}"}})</script>
       {% for path in extra_javascript %}
         <script src="{{ path }}"></script>
       {% endfor %}
     {% endblock %}
-    {% block analytics %}
-      {% if config.google_analytics %}
-      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","{{ config.google_analytics[0] }}","{{ config.google_analytics[1] }}"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
-      {% endif %}
-    {% endblock %}
+    {% if config.google_analytics %}
+    <script>var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(t){t.host!=document.location.host&&t.addEventListener("click",function(){var e=t.getAttribute("data-md-action")||"follow";gtag("event",e,{event_category:"docs-outbound",event_label:t.href})})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;gtag("event","page_view",{event_category:"docs-search",event_label:e+"?q="+this.value,value:e+"?q="+this.value})}})</script>
+    {% endif %}
   </body>
 </html>

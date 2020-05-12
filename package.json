@@ -1,15 +1,15 @@
 {
-  "name": "mkdocs-material-components",
-  "version": "1.10.11",
+  "name": "mkdocs-docmark",
+  "version": "1.10.14",
   "description": "A Material Components Web theme for MkDocs",
   "keywords": [
     "mkdocs",
     "documentation",
     "theme"
   ],
-  "homepage": "http://yakworks.github.io/mkdocs-material-components/",
+  "homepage": "http://yakworks.github.io/docmark/",
   "bugs": {
-    "url": "https://github.com/yakworks/mkdocs-material-components/issues",
+    "url": "https://github.com/yakworks/docmark/issues",
     "email": "dev@9ci.com"
   },
   "license": "MIT",
@@ -20,7 +20,7 @@
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yakworks/mkdocs-material-components.git"
+    "url": "https://github.com/yakworks/docmark.git"
   },
   "scripts": {
     "build": "scripts/clean; scripts/build",
@@ -93,6 +93,9 @@
     "webpack-stream": "^4.0.0",
     "whatwg-fetch": "^2.0.3",
     "yargs": "^9.0.1"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   },
   "engines": {
     "node": ">= 5.0.0"

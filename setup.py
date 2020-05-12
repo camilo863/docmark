@@ -47,7 +47,7 @@ setup(
     install_requires = install_requires,
     entry_points = {
         "mkdocs.themes": [
-            "material-components = material",
+            "docmark = material",
         ]
     },
     zip_safe = False

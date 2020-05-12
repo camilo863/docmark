@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# -
+# mkdocs but with pointer to the build/mkdocs.yml that has merged config from defaults
+# -
+mkdir -p build
+
+/opt/docmark/yml-merge.sh
+
+mkdocs "$@" --config-file=build/mkdocs.yml
+

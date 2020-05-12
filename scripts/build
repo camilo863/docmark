@@ -28,4 +28,4 @@ if [[ ! -d "$(yarn bin)" ]]; then
 fi
 
 # Run command
-"$(yarn bin)"/gulp build --clean --optimize --revision "$@"
+"$(yarn bin)"/gulp build --clean --revision "$@"

@@ -8,14 +8,14 @@ Finally, it degrades nicely and will still look decent in markdown parsers that 
 We have to hijack a few emojis to use as the first thing in the blockquotes but we think it worth it.
 click the edit pencil above to see the source for this page.
 
-Here is an example of what the markdown would degrade to and look when a parser doesn't support this extension
+Here is an example of what the markdown would degrade to and might look like when a parser doesn't support this extension
 
 ----------------------------------------
 
-> :blue_book: **Note: Cool Feature**  
+> :blue_book: **Note: Cool Feature**
 > Using an emoji and strong text we can specify what we need to build other types of blocks
 >
->     > :blue_book: **Note: Cool Feature**
+>     > :memo: **Note: Cool Feature**
 >     > Information here
 
 --------------------------------------
@@ -26,7 +26,7 @@ Here is an example of what the markdown would degrade to and look when a parser 
 
 <div markdown="1" class="row">
 
-> :camera:  
+> :camera:
 >
 |      Block       |           Syntax           |
 | ---------------- | -------------------------- |
@@ -37,7 +37,7 @@ Here is an example of what the markdown would degrade to and look when a parser 
 | Float Right align | '> 👉' or `> :point_right:` |
 >
 >
-``` md  
+``` md
 example syntax
 > 📝 **Some Title**
 > The content
@@ -52,7 +52,7 @@ a call out floated left
 
 with sizing and float alignment
 > :camera:{.float-left .pct33}
-> **Figure Title**   
+> **Figure Title**
 > ![](images/dingus/image.png)
 
 ```
@@ -74,17 +74,17 @@ with sizing and float alignment
 
 <div markdown="1" class="row">
 
-> :memo: **Note/Memo Admonition**  
-`> :memo: **Title**`  
+> :memo: **Note/Memo Admonition**
+`> :memo: **Title**`
 
------------------------------  
+-----------------------------
 
-> :bulb: **Tip Admonition**  
+> :bulb: **Tip Admonition**
 `> :bulb: **Title**`
 
 -----------------------------
 
-> :thumbsup: **Success Admonition**  
+> :thumbsup: **Success Admonition**
 `> :thumbsup: **Title**`
 
 -----------------------------
@@ -98,12 +98,12 @@ with sizing and float alignment
 
 -----------------------------
 
-> :warning: Warning/Important  
+> :warning: Warning/Important
 > `> :warning: content`
 
 -----------------------------
 
-> :x: Failure Admonition  
+> :x: Failure Admonition
 > `> :x: content`
 
 -----------------------------
@@ -112,7 +112,7 @@ with sizing and float alignment
 
 <div markdown="1" class="row">
 
-> :boom: **Danger Admonition**   
+> :boom: **Danger Admonition**
 `> :boom: content `
 -----------------------------
 
@@ -125,7 +125,7 @@ with sizing and float alignment
 
 <div markdown="1" class="row">
 
-> :bookmark: **Sidebar Bookmark**   
+> :bookmark: **Sidebar Bookmark**
 `> :bookmark: content `
 -----------------------------
 
@@ -162,7 +162,7 @@ Sidebar bookmarks are an idea taken from ascidoc
 any valid markdown such as tables can also go into the blocks
 
 > :bookmark:{.center-content} **Sidebar with lots of elements**
-> added `{.center-content}` to center contents.  
+> added `{.center-content}` to center contents.
 > center-text centers the container elements as well as text
 >
 * lists get centered and expand
@@ -175,7 +175,7 @@ any valid markdown such as tables can also go into the blocks
 >
 > > nested blockquotes are still full width
 >
-> Images get centered  
+> Images get centered
 > ![stormcat][]{.small}
 >
 > >:memo: nested admonitions
@@ -199,7 +199,7 @@ any valid markdown such as tables can also go into the blocks
 
 <div markdown="1" class="row">
 
-> :camera: **_Image Figure_**   
+> :camera: **_Image Figure_**
 > <img src='../images/dingus/image.png'>
 
 -----------------------------
@@ -224,12 +224,12 @@ any valid markdown such as tables can also go into the blocks
 
 **Example**
 
-    > :mega: **This is a callout with big centered text like this**  
+    > :mega: **This is a callout with big centered text like this**
     > **Callouts are blockquotes with bigger text and special styling.**
 
 will produce
 
-> :mega: **This is a callout with big centered text like this**  
+> :mega: **This is a callout with big centered text like this**
 > **Callouts are blockquotes with bigger text and special styling.**
 
 ## Sizing & Alignment
@@ -302,13 +302,13 @@ Floats can use emojis too.
 add :point_left: `:point_left:` to float left and :point_right: `:point_right:` to float right
 
 > :mega: :point_left:
-floated left callout  
+floated left callout
 `> :mega: :point_left: floated left callout`
 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. se cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 > :mega: :point_right:
-floated left callout  
+floated left callout
 `> :mega: :point_right: floated left callout `
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -323,7 +323,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 ### Using Attributes
 
-> :memo:{.float-left .pct33} **Use Size**  
+> :memo:{.float-left .pct33} **Use Size**
 > This is a note floated left with a 33% width `.pct33` 33% size
 
 Can use the the attributes plugin instead of the emoji's above as shown in more examples below
@@ -340,9 +340,9 @@ next to the emoji. the example below will give you what you see on the left here
 
 ## Material Icons
 
-You can use the material icons by adding an `.icon` class to an italic using atiributes  
+You can use the material icons by adding an `.icon` class to an italic using atiributes
 `_cloud_{.icon}` will produce _cloud_{.icon} for example.
-any of these are valid https://material.io/icons/  
+any of these are valid https://material.io/icons/
 💡 remember to use `_` when there is a space in the icon name
 
 ## Rows
@@ -362,42 +362,42 @@ This will equal space those blocks in that row as can be seen in many examples i
 
 can be floated on both sides
 
-> :camera:{.float-right .small} **Figure: Image Caption**  
+> :camera:{.float-right .small} **Figure: Image Caption**
 > ![](images/mental-thumb.jpg)
 > changes size uses attributes to set size
 > `> :camera:{.float-right .medium} **Figure Title**`
 
 -----------
 
-> :camera:{.float-right .large} **.large**  
+> :camera:{.float-right .large} **.large**
 > ![](images/dingus/image.png)
 
 **Size & Alignment Examples**
 see chart above
 
-> :camera:{.float-left .tiny} **.tiny**  
+> :camera:{.float-left .tiny} **.tiny**
 > ![](images/dingus/image.png){.pico}
 
 &nbsp;
 
-> :camera:{.float-left .xsmall} **.xsmall**  
+> :camera:{.float-left .xsmall} **.xsmall**
 > ![](images/dingus/image.png)
 
 &nbsp;
 
-> :camera:{.float-left .small} **.small**  
+> :camera:{.float-left .small} **.small**
 > ![](images/dingus/image.png)
 
 ---------------------------
 
-> :camera:{.medium .center} **.medium .center**  
+> :camera:{.medium .center} **.medium .center**
 > ![](images/dingus/image.png)
 
 -----------------------------
 
 **stand-alone sidebar bookmarks & figure examples**
 
-> :camera:{.center-all .pct80}  
+> :camera:{.center-all .pct80}
 > added `{.center-all .pct80}` to center in container and center contents and make size 66%
 >
 | Header One |     Header Two     | dollar amounts |
@@ -416,15 +416,15 @@ see chart above
 
 ### What is Lorem Ipsum?
 
-> :bookmark: :point_left: **sidebar-left :pushpin:**  
+> :bookmark: :point_left: **sidebar-left :pushpin:**
 >
 > * used since the 1500s
 > * popularised in the 1960s
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 
-> :bulb:{.float-right .small} **Example Tip**  
-This is a tip admonition  
+> :bulb:{.float-right .small} **Example Tip**
+This is a tip admonition
 
 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 

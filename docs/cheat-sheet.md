@@ -8,10 +8,10 @@ For a 60 second quick start on Markdown
 <div markdown="1" class="two-column">
 
 ``` md
-this is _italic_ and so is *this*  
+this is _italic_ and so is *this*
 this is __bold__ and so is **this**
-^^underline^^,  ~~strike through~~  
-==highlight==  and `inline code`  
+^^underline^^,  ~~strike through~~
+==highlight==  and `inline code`
 ==*you* **can** ^^combine^^ `too`==
 
 ```
@@ -20,10 +20,10 @@ this is __bold__ and so is **this**
 
 <div markdown="1" class="two-column">
 
-this is _italic_ and so is *this*  
-this is __bold__ and so is **this**  
-^^underline^^,  ~~strike through~~  
-==highlight==  and `inline code`  
+this is _italic_ and so is *this*
+this is __bold__ and so is **this**
+^^underline^^,  ~~strike through~~
+==highlight==  and `inline code`
 ==*you* **can** ^^combine^^ ~~too~~==
 
 </div>
@@ -35,13 +35,13 @@ this is __bold__ and so is **this**
 <div markdown="1" class="two-column">
 
 ``` md
-Put 2 spaces at the end of a line  
-to force a line break.  
+Put 2 spaces at the end of a line
+to force a line break.
 If you simply
 hit enter and
 don't use 2 spaces
 it merges the lines
-like this.  
+like this.
 You can also force a break <br> anywhere
 using the `<br>` tag like we just did
 ```
@@ -50,8 +50,8 @@ using the `<br>` tag like we just did
 
 <div markdown="1" class="two-column">
 
-Put 2 spaces at the end of a line  
-to force a line break.  
+Put 2 spaces at the end of a line
+to force a line break.
 If you simply
 hit enter and
 don't use 2 spaces
@@ -70,30 +70,40 @@ using the `<br>` tag like we just did
 <div markdown="1" class="two-column">
 
 ``` md
-* need a blank line above to start new list
-+ valid bullet symbols
-+ `*`, `-` or '+'
+
+- need a blank line above to start new list
+- valid bullet symbols `*`, `-` or '+'
+- nested
     - 4 spaces or 1 tab
     - to indent
 
 1. use *numbers* for ordered
-    * can nest
+    1. can nest
+    3. foo
+
 2. **numbers** can be in order
-    3. can also nest
-1. but it will fix them if not
+    1. can also nest
 
--   list item with two paragraphs.
+4. but it will fix them if not
 
-    anything like this paragraph
-    should be indented by 4 spaces
-    or a tab
+- list item with multiple paragraphs.
 
--   you can add blocks too
+    anything like this paragraph should be indented by 4 spaces
 
-    > :memo:
+    and a third
+
+-   you can add blocks too, just indent by 4 spaces
+
+    > :memo: **title**
     >
-    > * list under lists
-    > * under lists
+    > - list under lists
+    > - under lists
+
+-   add tables too
+
+    foo | bar
+    ----|----
+    some|data
 
 ```
 
@@ -101,30 +111,40 @@ using the `<br>` tag like we just did
 
 <div markdown="1" class="two-column">
 
-* need a blank line above to start new list
-+ valid bullet symbols
-+ `*`, `-` or '+'
+- need a blank line above to start new list
+- valid bullet symbols `*`, `-` or '+'
+- nested
     - 4 spaces or 1 tab
     - to indent
 
 1. use *numbers* for ordered
-    * can nest
-2. **numbers** can be in order
-    3. can also nest
-1. but it will fix them if not
+    1. nest indents need to be 4 spaces
+    3. foo
 
--   list item with two paragraphs.
+2. **numbers** can be in order
+    1. can also nest
+
+4. but it will fix them if not
+
+- list item with multiple paragraphs.
 
     anything like this paragraph
     should be indented by 4 spaces
-    or a tab
 
--   you can add blocks too
+    and a third
 
-    > :memo:
+-   you can add blocks too, just indent by 4 spaces
+
+    > :memo: **Note:**
     >
-    > * list under lists
-    > * under lists
+    > - list under lists
+    > - under lists
+
+-   add tables too
+
+    foo | bar
+    ----|----
+    some|data
 
 </div>
 
@@ -178,8 +198,8 @@ using the `<br>` tag like we just did
 <div markdown="1" class="two-column">
 
 ``` md
-[simple link](https://www.google.com )  
-[with optional title](https://www.google.com "Google's Homepage")  
+[simple link](https://www.google.com )
+[with optional title](https://www.google.com "Google's Homepage")
 point to a [relative file or md](./embedding/lucid.md) or
 mail link with emoji [📧](mailto:joshdev@9ci.com) or
 click this cloud icon to see the list of icon options
@@ -190,9 +210,9 @@ or [use an image ![](images/dingus/image-small.png)](images/dingus/image.png)
 [Reference-Style Links][some reference id]
 put link at bottom of paragraph or page.
 you can use numbers or text for
-[reference-style link definitions][1]  
+[reference-style link definitions][1]
 or leave it empty and
-just use the [link text itself]  
+just use the [link text itself]
 
 to [open in new tab](sandbox.md){.new-tab}
 use `{target=_blank} or {.new-tab}` attributes
@@ -212,8 +232,8 @@ but a recommended convention
 </div>
 <div markdown="1" class="two-column">
 
-[simple link](https://www.google.com )  
-[with optional title](https://www.google.com "Google's Homepage")  
+[simple link](https://www.google.com )
+[with optional title](https://www.google.com "Google's Homepage")
 point to a [relative file or md](./embedding/lucid.md) or
 mail link with emoji [📧](mailto:joshdev@9ci.com) or
 click this cloud icon to see the list of icon options
@@ -224,9 +244,9 @@ or [use an image ![](images/dingus/image-small.png)](images/dingus/image.png)
 [Reference-Style Links][some reference id]
 put link at bottom of paragraph or page.
 you can use numbers or text for
-[reference-style link definitions][1]  
+[reference-style link definitions][1]
 or leave it empty and
-just use the [link text itself]  
+just use the [link text itself]
 
 to [open in new tab](sandbox.md){.new-tab}
 us `{target=_blank} or {.new-tab}` attributes
@@ -251,12 +271,12 @@ required but a recommended convention
 
 ``` md
 inline ![](images/dingus/image-small.png)
-with alt text ![foo](images/dingus/image-small.png)  
-with ref links ![img-small][]  
+with alt text ![foo](images/dingus/image-small.png)
+with ref links ![img-small][]
 can use [sizing attributes](blocks/#sizing-alignment)
 
 Put `zoomify` in the alt text bracket to enable
-clicking to zoom. Try clicking on any of 
+clicking to zoom. Try clicking on any of
 these images ![zoomify][img-dingus]{.tiny}
 
 ![zoomify](images/dingus/image.png){.center .xsmall}
@@ -273,8 +293,8 @@ these images ![zoomify][img-dingus]{.tiny}
 <div markdown="1" class="two-column">
 
 inline ![](images/dingus/image-small.png)
-with alt text ![foo](images/dingus/image-small.png)  
-with ref links ![img-small][]  
+with alt text ![foo](images/dingus/image-small.png)
+with ref links ![img-small][]
 can use [sizing attributes](blocks/#sizing-alignment)
 
 Put `zoomify` in the alt text bracket to enable
@@ -325,16 +345,14 @@ HTML and FUBAR
 not having and enclosing * then
 just add it to end of abbr def.
 
----
+> :warning: Don't indent these, doesn't seem to work
 
->:warning: Don't indent these, doesn't seem to work
+</div>
 
 *[abbr]: Abbreviations
 *[def]: Definition
 *[HTML]: Hyper Text Markup Language
 *[FUBAR]:  You know what it means*
-
-</div>
 
 ---
 
@@ -346,7 +364,7 @@ just add it to end of abbr def.
 Footnotes[^1] work like reference links
 They auto-number like ordered lists[^3]
 You can use any
-reference id[^text reference]  
+reference id[^text reference]
 like ref links they can be
 organized at bottom
 of paragraph or page.
@@ -362,7 +380,7 @@ of paragraph or page.
 Footnotes[^1] work like reference links
 They auto-number like ordered lists[^3]
 You can use any
-reference id[^text reference]  
+reference id[^text reference]
 like ref links they can be
 organized at bottom
 of paragraph or page.
@@ -563,7 +581,7 @@ through out this doc we have been using a `<div markdown="1" class="two-column">
 |----|-----|
 |baz | buzz|
 
-</div>  
+</div>
 
 ---
 
@@ -587,7 +605,7 @@ through out this doc we have been using a `<div markdown="1" class="two-column">
 
 <div markdown="1" class="row">
 
-> :bug: **here is another example**  
+> :bug: **here is another example**
 well just use admonitions and a table
 
 ---

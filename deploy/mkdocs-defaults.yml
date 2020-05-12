@@ -1,0 +1,59 @@
+#default theme
+theme: 'docmark'
+
+site_dir: build/site
+
+# Options
+extra:
+  feature:
+    tabs: false
+  palette:
+    primary: 'orange'
+    accent: indigo
+
+# Extensions
+markdown_extensions:
+  - pymdownx.extra
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite(guess_lang=false)
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc(permalink=true)
+  - markdown_include.include:
+      base_path: 'docs'
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.emoji:
+      # inorder to avoid the "yaml.constructor.ConstructorError: could not determine a constructor for the tag"
+      # we prefix the python/name with the !! after merge with a sed command
+      emoji_index: python/name:pymdownx.emoji.gemoji
+      options:
+        image_path: "https://github.githubassets.com/images/icons/emoji/unicode/"
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
+  - mdx_truly_sane_lists:
+      nested_indent: 4
+
+  # list of extensions https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions
+  # see https://pyembed.github.io/usage/markdown/ for embedding youtube
+
+  # the following are included in the ppymdown.extra and pymdown.github
+  # - markdown.extensions.def_list
+  # - markdown.extensions.footnotes
+  # - markdown.extensions.abbr
+  # - pymdownx.betterem(smart_enable=all)
+  # - pymdownx.emoji:
+  #    emoji_index: !!python/name:pymdownx.emoji.gemoji
+  # - pymdownx.magiclink
+  # - pymdownx.superfences
+  # - pymdownx.tilde
+
+dev_addr: 0.0.0.0:8000
