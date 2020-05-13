@@ -1,0 +1,38 @@
+// stylelint-disable
+@page {
+  margin-top: 30px;
+  size: US-Letter;
+  font-size: 10px;
+  @bottom-right {
+    content: "Page " counter(page) " of " counter(pages);
+  }
+  @bottom-left {
+    content: "9ci Confidential";
+  }
+}
+
+@media print {  
+  html {
+    font-size: 12px;
+  }
+  .no-print, .no-print *, #header-docs, #header-website, #background {
+    display: none !important;
+  }
+  .md-container {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .md-typeset h1 {
+    font-size: 1.75em;
+    text-align: center;
+  }
+  .md-typeset h2 {
+    font-size: 1.375em;
+  }
+  .md-typeset h3 {
+    font-size: 1.25em;
+  }
+  button.md-clipboard {
+    display: none !important;
+  }
+}

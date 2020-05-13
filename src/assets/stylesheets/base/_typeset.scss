@@ -23,6 +23,7 @@
 // ----------------------------------------------------------------------------
 // Rules: font definitions
 // ----------------------------------------------------------------------------
+// stylelint-disable
 
 // Enable font-smoothing in Webkit and FF
 body {
@@ -79,7 +80,7 @@ kbd {
 
   // 1st level headline
   h1 {
-    margin: 0 0 1.5rem;
+    margin: 0 0 1rem;
     color: $md-color-black--light;
     font-size: ms(3);
     font-weight: 600;
@@ -89,18 +90,18 @@ kbd {
 
   // 2nd level headline
   h2 {
-    margin: 2rem 0 1rem;
+    margin: 1.5rem 0 0.7rem;
     font-size: ms(2);
-    font-weight: 600;
     letter-spacing: -0.01em;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #F0F1F3;
     line-height: 1.4;
   }
 
   // 3rd level headline
   h3 {
-    margin: 1.5rem 0 1rem;
+    margin: 1rem 0 1rem;
     font-size: ms(1);
-    font-weight: 600;
     letter-spacing: -0.01em;
     line-height: 1.5;
   }
@@ -112,9 +113,9 @@ kbd {
 
   // 4th level headline
   h4 {
+    font-size: 1.125rem;
     margin: 1rem 0;
-    font-size: ms(0);
-    font-weight: 600;
+    // font-size: ms(0);
     letter-spacing: -0.01em;
   }
 
@@ -124,7 +125,6 @@ kbd {
     margin: 1rem 0;
     color: $md-color-black--light;
     font-size: ms(-1);
-    font-weight: 700;
     letter-spacing: -0.01em;
   }
 
@@ -133,6 +133,11 @@ kbd {
     text-transform: uppercase;
   }
 
+  h2, h3, h4, h5, h6 {
+    color: $md-color-black--medium;
+    font-weight: 600;
+  }
+  
   // Horizontal separators
   hr {
     margin: 1.5em 0;
@@ -189,10 +194,10 @@ kbd {
     box-decoration-break: clone;
 
     // Remove box-shadows for print
-    @media print {
-      box-shadow: none;
-      box-decoration-break: initial;
-    }
+    // @media print {
+    //   box-shadow: none;
+    //   box-decoration-break: initial;
+    // }
   }
 
   // Disable containing block inside headlines

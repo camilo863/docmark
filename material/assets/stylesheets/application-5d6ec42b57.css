@@ -140,40 +140,41 @@ kbd {
   .md-typeset blockquote {
     margin: 1em 0; }
   .md-typeset h1 {
-    margin: 0 0 1.5rem;
+    margin: 0 0 1rem;
     color: rgba(0, 0, 0, 0.54);
     font-size: 1.95312rem;
     font-weight: 600;
     letter-spacing: -0.01em;
     line-height: 1.3; }
   .md-typeset h2 {
-    margin: 2rem 0 1rem;
+    margin: 1.5rem 0 0.7rem;
     font-size: 1.5625rem;
-    font-weight: 600;
     letter-spacing: -0.01em;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #F0F1F3;
     line-height: 1.4; }
   .md-typeset h3 {
-    margin: 1.5rem 0 1rem;
+    margin: 1rem 0 1rem;
     font-size: 1.25rem;
-    font-weight: 600;
     letter-spacing: -0.01em;
     line-height: 1.5; }
   .md-typeset h2 + h3 {
     margin-top: 1rem; }
   .md-typeset h4 {
+    font-size: 1.125rem;
     margin: 1rem 0;
-    font-size: 1rem;
-    font-weight: 600;
     letter-spacing: -0.01em; }
   .md-typeset h5,
   .md-typeset h6 {
     margin: 1rem 0;
     color: rgba(0, 0, 0, 0.54);
     font-size: 0.8rem;
-    font-weight: 700;
     letter-spacing: -0.01em; }
   .md-typeset h5 {
     text-transform: uppercase; }
+  .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5, .md-typeset h6 {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 600; }
   .md-typeset hr {
     margin: 1.5em 0;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.26); }
@@ -1117,6 +1118,9 @@ pre.\:hover .md-clipboard::before,
       transition: color     0.25s, transform 0s 0.4s, opacity   0.1s, -webkit-transform 0s 0.4s;
       opacity: 0; }
 
+.card.admonition, .md-typeset details.card {
+  padding: 4px 12px 8px; }
+
 .admonition, .md-typeset details {
   position: relative;
   margin: 1.5625em 0;
@@ -1127,6 +1131,7 @@ pre.\:hover .md-clipboard::before,
   font-size: 0.875rem; }
   .admonition::before, .md-typeset details::before {
     position: absolute;
+    top: 6px;
     left: -24px;
     color: white;
     font-size: 20px;
@@ -1138,45 +1143,45 @@ pre.\:hover .md-clipboard::before,
     margin-bottom: 0; }
   .admonition.tldr, .md-typeset details.tldr, .admonition.summary, .md-typeset details.summary {
     border-color: rgba(0, 176, 255, 0.6);
-    background-color: rgba(0, 176, 255, 0.05); }
+    background-color: rgba(0, 176, 255, 0.02); }
     .admonition.tldr::before, .md-typeset details.tldr::before, .admonition.summary::before, .md-typeset details.summary::before {
       content: "assignment"; }
   .admonition.hint, .md-typeset details.hint, .admonition.important, .md-typeset details.important, .admonition.tip, .md-typeset details.tip {
     border-color: rgba(156, 204, 101, 0.6);
-    background-color: rgba(156, 204, 101, 0.05); }
+    background-color: rgba(156, 204, 101, 0.02); }
     .admonition.hint::before, .md-typeset details.hint::before, .admonition.important::before, .md-typeset details.important::before, .admonition.tip::before, .md-typeset details.tip::before {
       content: "lightbulb_outline";
       font-weight: 600; }
   .admonition.check, .md-typeset details.check, .admonition.done, .md-typeset details.done, .admonition.success, .md-typeset details.success {
     border-color: rgba(0, 230, 118, 0.6);
-    background-color: rgba(0, 230, 118, 0.05); }
+    background-color: rgba(0, 230, 118, 0.02); }
     .admonition.check::before, .md-typeset details.check::before, .admonition.done::before, .md-typeset details.done::before, .admonition.success::before, .md-typeset details.success::before {
       content: "done";
       font-weight: 600; }
   .admonition.caution, .md-typeset details.caution, .admonition.attention, .md-typeset details.attention, .admonition.warning, .md-typeset details.warning {
     border-color: rgba(255, 171, 64, 0.6);
-    background-color: rgba(255, 171, 64, 0.05); }
+    background-color: rgba(255, 171, 64, 0.02); }
     .admonition.caution::before, .md-typeset details.caution::before, .admonition.attention::before, .md-typeset details.attention::before, .admonition.warning::before, .md-typeset details.warning::before {
       content: "warning"; }
   .admonition.fail, .md-typeset details.fail, .admonition.missing, .md-typeset details.missing, .admonition.failure, .md-typeset details.failure {
     border-color: rgba(255, 138, 128, 0.6);
-    background-color: rgba(255, 138, 128, 0.05); }
+    background-color: rgba(255, 138, 128, 0.02); }
     .admonition.fail::before, .md-typeset details.fail::before, .admonition.missing::before, .md-typeset details.missing::before, .admonition.failure::before, .md-typeset details.failure::before {
       content: "clear";
       font-weight: 600; }
   .admonition.error, .md-typeset details.error, .admonition.danger, .md-typeset details.danger {
     border-color: rgba(255, 23, 68, 0.6);
-    background-color: rgba(255, 23, 68, 0.05); }
+    background-color: rgba(255, 23, 68, 0.02); }
     .admonition.error::before, .md-typeset details.error::before, .admonition.danger::before, .md-typeset details.danger::before {
       content: "flash_on"; }
   .admonition.bug, .md-typeset details.bug {
     border-color: rgba(245, 0, 87, 0.6);
-    background-color: rgba(245, 0, 87, 0.05); }
+    background-color: rgba(245, 0, 87, 0.02); }
     .admonition.bug::before, .md-typeset details.bug::before {
       content: "bug_report"; }
   .admonition.cite, .md-typeset details.cite, .admonition.quote, .md-typeset details.quote {
     border-color: rgba(158, 158, 158, 0.6);
-    background-color: rgba(158, 158, 158, 0.05); }
+    background-color: rgba(158, 158, 158, 0.02); }
     .admonition.cite::before, .md-typeset details.cite::before, .admonition.quote::before, .md-typeset details.quote::before {
       content: "format_quote"; }
 
@@ -1791,32 +1796,14 @@ pre.\:hover .md-clipboard::before,
   opacity: 0;
   z-index: -1; }
 
-@media print {
-      .md-typeset code {
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        -webkit-box-decoration-break: initial;
-                box-decoration-break: initial; }
-    .md-container {
-      padding-top: 0; }
-    .md-content__inner {
-      padding-top: 0; }
-    .md-content__icon {
-      display: none; }
-    .md-header {
-      position: relative; }
-      .md-header-nav__button.md-icon--menu {
-        display: none; }
-  .md-footer {
-    display: none; }
-  .md-search {
-    display: none; }
-    .md-sidebar {
-      display: none; }
-    .md-tabs {
-      display: none; }
-    .md-typeset .headerlink {
-      display: none; } }
+@page {
+  margin-top: 30px;
+  size: US-Letter;
+  font-size: 10px;
+  @bottom-right {
+    content: "Page " counter(page) " of " counter(pages); }
+  @bottom-left {
+    content: "9ci Confidential"; } }
 
 @media only screen and (max-width: 44.9375em) {
       .md-typeset pre {
@@ -2023,6 +2010,44 @@ pre.\:hover .md-clipboard::before,
       bottom: 0; }
         .md-search-result__article--document::before {
           display: none; } }
+
+@media print {
+    .md-container {
+      padding-top: 0; }
+    .md-content__inner {
+      padding-top: 0; }
+    .md-content__icon {
+      display: none; }
+    .md-header {
+      position: relative; }
+      .md-header-nav__button.md-icon--menu {
+        display: none; }
+  .md-footer {
+    display: none; }
+  .md-search {
+    display: none; }
+    .md-sidebar {
+      display: none; }
+    .md-tabs {
+      display: none; }
+    .md-typeset .headerlink {
+      display: none; }
+  html {
+    font-size: 12px; }
+  .no-print, .no-print *, #header-docs, #header-website, #background {
+    display: none !important; }
+  .md-container {
+    padding-top: 0px;
+    margin-top: 0px; }
+  .md-typeset h1 {
+    font-size: 1.75em;
+    text-align: center; }
+  .md-typeset h2 {
+    font-size: 1.375em; }
+  .md-typeset h3 {
+    font-size: 1.25em; }
+  button.md-clipboard {
+    display: none !important; } }
 
 @media only screen and (max-width: 76.1875em) {
     [data-md-toggle="drawer"]:checked ~ .md-overlay {

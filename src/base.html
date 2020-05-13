@@ -125,16 +125,21 @@
     {% block fonts %}
       <!-- TODO: remove the second check in the next major version -->
       {% if config.extra.font != false and config.extra.font != "none" %}
-        {% set text = config.extra.get("font", {}).text | default("Open Sans") %}
+        {% set text = config.extra.get("font", {}).text | default("Lato") %}
+        {% set headers = config.extra.get("font", {}).headers | default("Roboto Slab") %}
         {% set code = config.extra.get("font", {}).code
                     | default("Ubuntu Mono") %}
-        {% set font = text + ":300,300i,400,400i,600,600i,700,700i,800,800i|" + code | replace(" ", "+") %}
+        {% set font = text | replace(" ", "+") + ":300,300i,400,400i,600,600i,700,700i,800,800i|" + headers | replace(" ", "+") + ":400,500,600,700|"
+          + code | replace(" ", "+") %}
         <link rel="stylesheet" type="text/css"
             href="https://fonts.googleapis.com/css?family={{ font }}" />
         <style>
           body, input {
             font-family: "{{ text }}", "Helvetica Neue",
               Helvetica, Arial, sans-serif;
+          }
+          h1, h2, h3, h4, h5, h6 {
+            font-family: "{{ headers }}","Georgia",Arial,sans-serif;
           }
           pre, code, kbd {
             font-family: "{{ code }}", "Courier New",

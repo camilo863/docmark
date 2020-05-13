@@ -45,10 +45,10 @@
       {% endif %}
     {% endblock %}
     {% block libs %}
-      <script src="{{ base_url }}/assets/javascripts/modernizr-b36cc87056.js"></script>
+      <script src="{{ base_url }}/assets/javascripts/modernizr-2b68990d09.js"></script>
     {% endblock %}
     {% block styles %}
-      <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application-8c4c8d1e34.css">
+      <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application-5d6ec42b57.css">
       {% if config.extra.palette %}
         <link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/application-4b0996440c.palette.css">
       {% endif %}
@@ -57,12 +57,14 @@
     {% endblock %}
     {% block fonts %}
       {% if config.extra.font != false and config.extra.font != "none" %}
-        {% set text = config.extra.get("font", {}).text | default("Open Sans") %}
+        {% set text = config.extra.get("font", {}).text | default("Lato") %}
+        {% set headers = config.extra.get("font", {}).headers | default("Roboto Slab") %}
         {% set code = config.extra.get("font", {}).code
                     | default("Ubuntu Mono") %}
-        {% set font = text + ":300,300i,400,400i,600,600i,700,700i,800,800i|" + code | replace(" ", "+") %}
+        {% set font = text | replace(" ", "+") + ":300,300i,400,400i,600,600i,700,700i,800,800i|" + headers | replace(" ", "+") + ":400,500,600,700|"
+          + code | replace(" ", "+") %}
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ font }}">
-        <style>body,input{font-family:"{{ text }}","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"{{ code }}","Courier New",Courier,monospace}</style>
+        <style>body,input{font-family:"{{ text }}","Helvetica Neue",Helvetica,Arial,sans-serif}h1,h2,h3,h4,h5,h6{font-family:"{{ headers }}",Georgia,Arial,sans-serif}code,kbd,pre{font-family:"{{ code }}","Courier New",Courier,monospace}</style>
       {% endif %}
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     {% endblock %}

@@ -25,13 +25,17 @@
 // ----------------------------------------------------------------------------
 
 // Admonition extension
+.card.admonition {
+  padding: 4px 12px 8px;
+}
+
 .admonition {
   position: relative;
   margin: 1.5625em 0;
   padding: 8px 16px;
   border-left: 28px solid transparentize($clr-blue-a200, 0.6);
   border-radius: 2px;
-  background-color: transparentize($clr-blue-a100, 0.95);
+  background-color: transparentize($clr-blue-a100, 0.98);
   font-size: 0.875rem;
 
   // Icon
@@ -39,6 +43,7 @@
     @extend %md-icon;
 
     position: absolute;
+    top: 6px;
     left: -24px;
     color: $md-color-white;
     font-size: 20px;
@@ -76,7 +81,7 @@
     &%#{nth($names, 1)},
     &.#{nth($names, 1)} {
       border-color: transparentize($tint, 0.4);
-      background-color: transparentize($tint, 0.95);
+      background-color: transparentize($tint, 0.98);
 
       // Icon
       &::before {

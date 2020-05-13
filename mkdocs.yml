@@ -15,7 +15,7 @@ edit_uri: edit/docmark/docs/
 copyright: 'Copyright &copy; 2020 Joshua Burnett'
 
 # Theme directory
-# theme_dir: material
+theme_dir: material
 # use installed theme
 # theme: 'docmark' # Use this one if not developing here
 

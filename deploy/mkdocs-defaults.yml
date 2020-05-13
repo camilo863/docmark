@@ -1,6 +1,3 @@
-#default theme
-theme: 'docmark'
-
 site_dir: build/site
 dev_addr: 0.0.0.0:8000
 
