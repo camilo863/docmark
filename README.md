@@ -1,5 +1,5 @@
 
-Docmark is a Material theme for the markdown flavored documentation engine  [MkDocs][1].
+Docmark is a theme for the markdown flavored documentation engine  [MkDocs][1].
 It forks from the excellent [MkDocs-Material][2] theme and uses Google's [Material Components Web][3]as the base.
 
   [1]: http://www.mkdocs.org
@@ -34,7 +34,7 @@ pip install mkdocs-material
 Append the following line to your project's `mkdocs.yml`:
 
 ``` yaml
-theme: 'material'
+theme: 'docmark'
 ```
 
 ## What to expect
