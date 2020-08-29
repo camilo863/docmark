@@ -5,8 +5,9 @@ FROM yakworks/nginx-python
 # RUN chmod +x /usr/bin/yq
 
 # git to download, gettext for envsubst command, apache2-utils for htpasswd.
+# openssh-client & curl for circle checkouts
 RUN apk update && apk add --no-cache \
-	git sed make inotify-tools && \
+	git openssh-client curl sed make inotify-tools && \
   rm -rf /var/cache/apk/*
 
 # Set build directory
