@@ -990,7 +990,7 @@ should be indented by 4 spaces</p>
 point to a [<span class="nt">relative file or md</span>](<span class="na">./embedding/lucid.md</span>) or
 mail link with emoji [<span class="nt">📧</span>](<span class="na">mailto:joshdev@9ci.com</span>) or
 click this cloud icon to see the list of icon options
-[<span class="nt">_cloud_{.icon}</span>](<span class="na">https://material.io/icons/</span>)
+[<span class="ge">_cloud_</span>{.icon}](https://material.io/icons/)
 
 or [<span class="nt">use an image ![</span>](<span class="na">images/dingus/image-small.png</span>)](images/dingus/image.png)
 
@@ -1089,7 +1089,7 @@ just add it to end of abbr def.
 *[abbr]: Abbreviations
 *[def]: Definition
 *[HTML]: Hyper Text Markup Language
-*[FUBAR]:  You know what it means*
+<span class="ge">*[FUBAR]:  You know what it means*</span>
 </pre></div>
 
 </div>
@@ -1114,9 +1114,9 @@ like ref links they can be
 organized at bottom
 of paragraph or page.
 
-  [^1]: footnote, click the return icon here to go back -&gt;
-  [^3]: the number will not necessarily be what you use
-  [^text reference]: text reference
+  [<span class="nl">^1</span>]: <span class="na">footnote, click the return icon here to go back -&gt;</span>
+  [<span class="nl">^3</span>]: <span class="na">the number will not necessarily be what you use</span>
+  [<span class="nl">^text reference</span>]: <span class="na">text reference</span>
 </pre></div>
 
 </div>
@@ -1143,13 +1143,13 @@ You can also use inline Markdown.
 | -------- |:-------------:| ---------:|
 | col 3 is | right-aligned |     $1600 |
 | col 2 is |   centered    |       $12 |
-|          |   **Total**   |   **$1612** |
+|          |   <span class="gs">**Total**</span>   |   <span class="gs">**$1612**</span> |
 
-==Table== | **Format** | 👀 _scramble_
+==Table== | <span class="gs">**Format**</span> | 👀 <span class="ge">_scramble_</span>
 --- | --- | ---
-*Still* | `renders` | **nicely**
-[with links](images/dingus/image-small.png) | images ![zoomify](images/dingus/image-small.png){.tiny} | emojis 🍔
-icons _cloud_{.icon} | footnotes[^1] | use `&lt;br&gt;` &lt;br&gt; for multi-line &lt;br&gt; line breaks
+<span class="ge">*Still*</span> | <span class="sb">`renders`</span> | <span class="gs">**nicely**</span>
+[<span class="nt">with links</span>](<span class="na">images/dingus/image-small.png</span>) | images ![<span class="nt">zoomify</span>](<span class="na">images/dingus/image-small.png</span>){.tiny} | emojis 🍔
+icons <span class="ge">_cloud_</span>{.icon} | footnotes[^1] | use <span class="sb">`&lt;br&gt;`</span> &lt;br&gt; for multi-line &lt;br&gt; line breaks
 </pre></div>
 
 </div>
@@ -1216,23 +1216,23 @@ You can also use inline Markdown.</p>
 <hr />
 <h3 id="blockquotes">Blockquotes<a class="headerlink" href="#blockquotes" title="Permanent link">&para;</a></h3>
 <div class="two-column">
-<div class="codehilite"><pre><span></span>&gt; Blockquotes are handy to callout text.
+<div class="codehilite"><pre><span></span><span class="k">&gt; </span><span class="ge">Blockquotes are handy to callout text.</span>
 they are greedy and will keep
 grabbing text. The &#39;&gt;&#39; is optional unless trying join
-&gt;
-paragraphs, tables etc.
+<span class="k">&gt;</span>
+<span class="ge">paragraphs, tables etc.</span>
 
 a blank line and a new paragraph
 or other markdown thing end them
 
 &gt;:bulb:
-use a `---` seperator or `&lt;br&gt;`
+use a <span class="sb">`---`</span> seperator or <span class="sb">`&lt;br&gt;`</span>
 if you want multiple sepearte block quotes
 
 ---
 
-&gt; can have nested
-&gt; &gt; blockquotes inside of block quotes
+<span class="k">&gt; </span><span class="ge">can have nested</span>
+<span class="k">&gt; </span><span class="ge">&gt; blockquotes inside of block quotes</span>
 block quotes can also contain any valid markdown
 </pre></div>
 
@@ -1264,19 +1264,19 @@ block quotes can also contain any valid markdown</p>
 <hr />
 <h3 id="blocks-admonitions-callouts-sidebars">Blocks - admonitions, callouts, sidebars<a class="headerlink" href="#blocks-admonitions-callouts-sidebars" title="Permanent link">&para;</a></h3>
 <div class="two-column">
-<div class="codehilite"><pre><span></span>&gt; :memo: **Memo Admonition**
+<div class="codehilite"><pre><span></span><span class="k">&gt; </span><span class="ge">:memo: **Memo Admonition**</span>
 use blockquotes
 with emoji indicators for
 admonition memos, callout etc..
 
 ---
 
-&gt; :boom:
+<span class="k">&gt; </span><span class="ge">:boom:</span>
 Title title like above is optional
 
 ---
 
-&gt; :bulb: See [the section about blocks](blocks.md#cheatsheet)
+<span class="k">&gt; </span><span class="ge">:bulb: See [the section about blocks](blocks.md#cheatsheet)</span>
 for the list of emojis that can be used.
 </pre></div>
 
@@ -1386,10 +1386,10 @@ and as you can see the heights get adjusted to be equal as well</p>
 <div class="row">
 <blockquote>
 <p><img alt="📷" class="gemoji pct50" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
-<div class="codehilite"><pre><span></span># h1 Heading
-## h2 Heading
-### h3 Heading
-#### h4 Heading
+<div class="codehilite"><pre><span></span><span class="gh"># h1 Heading</span>
+<span class="gu">## h2 Heading</span>
+<span class="gu">### h3 Heading</span>
+<span class="gu">#### h4 Heading</span>
 
 Horizontal Rules
 

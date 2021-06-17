@@ -1184,12 +1184,12 @@ def bubble_sort(items):
 </pre></div>
 
 <p>Result:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="sd">&quot;&quot;&quot; Bubble sort &quot;&quot;&quot;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="sd">&quot;&quot;&quot; Bubble sort &quot;&quot;&quot;</span>
 <span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
         <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
@@ -1213,12 +1213,12 @@ def bubble_sort(items):
 </pre></div>
 
 <p>Result:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="sd">&quot;&quot;&quot; Bubble sort &quot;&quot;&quot;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="sd">&quot;&quot;&quot; Bubble sort &quot;&quot;&quot;</span>
 <span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
 <span class="hll">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
 </span><span class="hll">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
@@ -1233,9 +1233,9 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <h3 id="bash">Bash<a class="headerlink" href="#bash" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
 
-<span class="k">for</span> OPT in <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
+<span class="k">for</span> OPT <span class="k">in</span> <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
 <span class="k">do</span>
-  <span class="k">case</span> <span class="s2">&quot;</span><span class="nv">$OPT</span><span class="s2">&quot;</span> in
+  <span class="k">case</span> <span class="s2">&quot;</span><span class="nv">$OPT</span><span class="s2">&quot;</span> <span class="k">in</span>
     <span class="s1">&#39;-f&#39;</span> <span class="o">)</span>  <span class="nv">canonicalize</span><span class="o">=</span><span class="m">1</span> <span class="p">;;</span>
     <span class="s1">&#39;-n&#39;</span> <span class="o">)</span>  <span class="nv">switchlf</span><span class="o">=</span><span class="s2">&quot;-n&quot;</span> <span class="p">;;</span>
   <span class="k">esac</span>
@@ -1255,9 +1255,9 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="k">if</span> <span class="o">[</span> ! <span class="s2">&quot;</span><span class="nv">$canonicalize</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
   readlink <span class="nv">$switchlf</span> <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
 <span class="k">else</span>
-  <span class="k">for</span> file in <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
+  <span class="k">for</span> file <span class="k">in</span> <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
   <span class="k">do</span>
-    <span class="k">case</span> <span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span> in
+    <span class="k">case</span> <span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span> <span class="k">in</span>
       -* <span class="o">)</span>  <span class="p">;;</span>
       *  <span class="o">)</span>  __readlink_f <span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span> <span class="p">;;</span>
     <span class="k">esac</span>
@@ -1309,7 +1309,7 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 
 <h3 id="c_1">C++<a class="headerlink" href="#c_1" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="n">Extension</span><span class="o">::</span>
-<span class="n">Extension</span><span class="p">(</span><span class="k">const</span> <span class="n">Descriptor</span> <span class="o">*</span><span class="n">descriptor</span><span class="p">,</span> <span class="k">const</span> <span class="n">Descriptor</span> <span class="o">*</span><span class="n">scope</span><span class="p">)</span> <span class="o">:</span>
+<span class="nf">Extension</span><span class="p">(</span><span class="k">const</span> <span class="n">Descriptor</span> <span class="o">*</span><span class="n">descriptor</span><span class="p">,</span> <span class="k">const</span> <span class="n">Descriptor</span> <span class="o">*</span><span class="n">scope</span><span class="p">)</span> <span class="o">:</span>
     <span class="n">descriptor_</span><span class="p">(</span><span class="n">descriptor</span><span class="p">),</span>
     <span class="n">scope_</span><span class="p">(</span><span class="n">scope</span><span class="p">)</span> <span class="p">{</span>
 
@@ -1322,7 +1322,7 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
   <span class="n">LowerString</span><span class="p">(</span><span class="o">&amp;</span><span class="p">(</span><span class="n">variables_</span><span class="p">[</span><span class="s">&quot;message&quot;</span><span class="p">]));</span>
 
   <span class="cm">/* Suffix scope to identifiers, if given */</span>
-  <span class="n">string</span> <span class="nf">suffix</span> <span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+  <span class="n">string</span> <span class="n">suffix</span> <span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">scope_</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">suffix</span> <span class="o">=</span> <span class="n">scope_</span><span class="o">-&gt;</span><span class="n">full_name</span><span class="p">();</span>
 
@@ -1631,7 +1631,7 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nb">Math</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;lib/math&#39;</span><span class="p">);</span>
 
 <span class="kd">var</span> <span class="nx">_extends</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">target</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">source</span> <span class="o">=</span> <span class="nx">arguments</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
     <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">source</span><span class="p">)</span> <span class="p">{</span>
       <span class="nx">target</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="nx">source</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span>
@@ -1671,13 +1671,13 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <h3 id="julia">Julia<a class="headerlink" href="#julia" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">MXNet</span>
 
-<span class="n">mlp</span> <span class="o">=</span> <span class="nd">@mx</span><span class="o">.</span><span class="n">chain</span> <span class="n">mx</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="o">:</span><span class="n">data</span><span class="p">)</span>             <span class="o">=&gt;</span>
-  <span class="n">mx</span><span class="o">.</span><span class="n">FullyConnected</span><span class="p">(</span><span class="n">name</span><span class="o">=:</span><span class="n">fc1</span><span class="p">,</span> <span class="n">num_hidden</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span> <span class="o">=&gt;</span>
-  <span class="n">mx</span><span class="o">.</span><span class="n">Activation</span><span class="p">(</span><span class="n">name</span><span class="o">=:</span><span class="n">relu1</span><span class="p">,</span> <span class="n">act_type</span><span class="o">=:</span><span class="n">relu</span><span class="p">)</span>   <span class="o">=&gt;</span>
-  <span class="n">mx</span><span class="o">.</span><span class="n">FullyConnected</span><span class="p">(</span><span class="n">name</span><span class="o">=:</span><span class="n">fc2</span><span class="p">,</span> <span class="n">num_hidden</span><span class="o">=</span><span class="mi">64</span><span class="p">)</span>  <span class="o">=&gt;</span>
-  <span class="n">mx</span><span class="o">.</span><span class="n">Activation</span><span class="p">(</span><span class="n">name</span><span class="o">=:</span><span class="n">relu2</span><span class="p">,</span> <span class="n">act_type</span><span class="o">=:</span><span class="n">relu</span><span class="p">)</span>   <span class="o">=&gt;</span>
-  <span class="n">mx</span><span class="o">.</span><span class="n">FullyConnected</span><span class="p">(</span><span class="n">name</span><span class="o">=:</span><span class="n">fc3</span><span class="p">,</span> <span class="n">num_hidden</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>  <span class="o">=&gt;</span>
-  <span class="n">mx</span><span class="o">.</span><span class="n">SoftmaxOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=:</span><span class="n">softmax</span><span class="p">)</span>
+<span class="n">mlp</span> <span class="o">=</span> <span class="nd">@mx</span><span class="o">.</span><span class="n">chain</span> <span class="n">mx</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="ss">:data</span><span class="p">)</span>             <span class="o">=&gt;</span>
+  <span class="n">mx</span><span class="o">.</span><span class="n">FullyConnected</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="ss">:fc1</span><span class="p">,</span> <span class="n">num_hidden</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span> <span class="o">=&gt;</span>
+  <span class="n">mx</span><span class="o">.</span><span class="n">Activation</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="ss">:relu1</span><span class="p">,</span> <span class="n">act_type</span><span class="o">=</span><span class="ss">:relu</span><span class="p">)</span>   <span class="o">=&gt;</span>
+  <span class="n">mx</span><span class="o">.</span><span class="n">FullyConnected</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="ss">:fc2</span><span class="p">,</span> <span class="n">num_hidden</span><span class="o">=</span><span class="mi">64</span><span class="p">)</span>  <span class="o">=&gt;</span>
+  <span class="n">mx</span><span class="o">.</span><span class="n">Activation</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="ss">:relu2</span><span class="p">,</span> <span class="n">act_type</span><span class="o">=</span><span class="ss">:relu</span><span class="p">)</span>   <span class="o">=&gt;</span>
+  <span class="n">mx</span><span class="o">.</span><span class="n">FullyConnected</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="ss">:fc3</span><span class="p">,</span> <span class="n">num_hidden</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>  <span class="o">=&gt;</span>
+  <span class="n">mx</span><span class="o">.</span><span class="n">SoftmaxOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="ss">:softmax</span><span class="p">)</span>
 
 <span class="c"># data provider</span>
 <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">100</span>
@@ -1723,9 +1723,9 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <h3 id="mysql">MySQL<a class="headerlink" href="#mysql" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="k">SELECT</span>
   <span class="n">Employees</span><span class="p">.</span><span class="n">EmployeeID</span><span class="p">,</span>
-  <span class="n">Employees</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span>
+  <span class="n">Employees</span><span class="p">.</span><span class="k">Name</span><span class="p">,</span>
   <span class="n">Employees</span><span class="p">.</span><span class="n">Salary</span><span class="p">,</span>
-  <span class="n">Manager</span><span class="p">.</span><span class="n">Name</span> <span class="k">AS</span> <span class="n">Manager</span>
+  <span class="n">Manager</span><span class="p">.</span><span class="k">Name</span> <span class="k">AS</span> <span class="n">Manager</span>
 <span class="k">FROM</span>
   <span class="n">Employees</span>
 <span class="k">LEFT</span> <span class="k">JOIN</span>
@@ -1761,7 +1761,7 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 </pre></div>
 
 <h3 id="protocol-buffers">Protocol Buffers<a class="headerlink" href="#protocol-buffers" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><span class="na">syntax</span> <span class="o">=</span> <span class="s">&quot;proto2&quot;</span><span class="p">;</span>
+<div class="codehilite"><pre><span></span><span class="k">syntax</span> <span class="o">=</span> <span class="s">&quot;proto2&quot;</span><span class="p">;</span>
 
 <span class="kn">package</span> <span class="nn">caffe</span><span class="p">;</span>
 
