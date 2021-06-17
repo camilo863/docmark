@@ -1,0 +1,1 @@
+echo "Foobar" > /site/foo.html

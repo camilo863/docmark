@@ -16,6 +16,10 @@ echo "--- building mkdocs site --"
 docmark build
 cp -r ./build/site /site
 
+
+# execute POST_BUILD_SCRIPT if it's not null
+[ ! -z "$POST_BUILD_SCRIPT" ] &&  eval "$POST_BUILD_SCRIPT"
+
 #call the nginx script
 /opt/nginx-entry.sh
 
