@@ -6,8 +6,9 @@ FROM yakworks/nginx-python
 
 # git to download, gettext for envsubst command, apache2-utils for htpasswd.
 # openssh-client & curl for circle checkouts
+# gnupg and grep for secrets and vault
 RUN apk update && apk add --no-cache \
-	git openssh-client curl sed make inotify-tools && \
+	git openssh-client curl sed make inotify-tools gnupg grep && \
   rm -rf /var/cache/apk/*
 
 # Set build directory

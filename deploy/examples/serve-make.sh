@@ -5,5 +5,5 @@ docker run -it --rm \
 -e GITHUB_PROJECT='yakworks/docmark' \
 -e GITHUB_BRANCH='docmark' \
 -e GITHUB_TOKEN=$GRGIT_USER \
--e POST_BUILD_SCRIPT="./deploy/docmark-nginx/examplepost.sh" \
+-e MAKE_BULD_TARGET="testing" \
 yakworks/docmark-nginx 

@@ -1,25 +1,26 @@
-#!/bin/sh
+#!/bin/bash
 
 #set -e
-#GITHUB_PROJECT="$GITHUB_OWNER/$GITHUB_REPO"
-#ENV VARS THAT SHOULD BE SET
-#GITHUB_PROJECT GITHUB_BRANCH GITHUB_TOKEN
+
 GITHUB_BASE_URL="github.com/$GITHUB_PROJECT.git"
-#GRGIT_USER should be in env
 GITHUB_URL="https://dummy:${GITHUB_TOKEN}@$GITHUB_BASE_URL"
+
+# set branch to master if not set
+: ${GITHUB_BRANCH:=master}
 
 # clone to /site
 git clone $GITHUB_URL git-project -b $GITHUB_BRANCH --single-branch --depth 1
 cd git-project
 
 echo "--- building mkdocs site --"
-docmark build
-cp -r ./build/site /site
 
+if [ "$MAKE_BULD_TARGET" ]; then
+  make "$MAKE_BULD_TARGET"
+else
+  docmark build
+  cp -r ./build/site /site
+fi
 
-# execute POST_BUILD_SCRIPT if it's not null
-[ ! -z "$POST_BUILD_SCRIPT" ] &&  eval "$POST_BUILD_SCRIPT"
-
-#call the nginx script
+# call the nginx script to start web server
 /opt/nginx-entry.sh
 
